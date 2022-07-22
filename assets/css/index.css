@@ -250,7 +250,7 @@
 .wrapper .card .text{
   background: -webkit-linear-gradient(left, #a445b2, #fa4299);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: none; */
 }
 .circle .box span{
   font-size: 38px;
