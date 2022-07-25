@@ -904,6 +904,12 @@ Responsive Menu
     .menuzord-responsive .menuzord-menu>li:first-child>a {
         border-top: 1px solid rgba(0, 0, 0, 0.03);
     }
+     .menuzord-menu>li {
+        
+        margin-left: 0;
+            background-color: #d30023;
+        }
+    
     .menuzord-responsive .menuzord-menu ul.dropdown,
     .menuzord-responsive .menuzord-menu ul.dropdown li ul.dropdown {
         width: 100%;
@@ -977,7 +983,7 @@ Responsive Menu
 
     #header.transparent-header .light-header,
     #header.transparent-header {
-        background: #fff !important;
+        background: #d30023  !important;
     }
 
     #header.transparent-header .dark-header,
