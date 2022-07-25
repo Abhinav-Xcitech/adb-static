@@ -351,6 +351,7 @@ Footer 4
 
 .footer-four .back-top {
     top: -35px;
+    background: #fff;
 }
 
 @media (max-width: 767px) {

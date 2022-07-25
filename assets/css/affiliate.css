@@ -157,17 +157,17 @@
 
 
 .slide-1 {
-  background: url("assets/img/affiliate/Connect.jpg");
+  background: url("../img/affiliate/Connect.jpg");
   background-size: cover;
 }
 
 .slide-2 {
-  background: url("assets/img/affiliate/paid.jpg");
+  background: url("../img/affiliate/paid.jpg");
   background-size: cover;
 }
 
 .slide-3 {
-  background: url("assets/img/affiliate/Promote.jpg");
+  background: url("../img/affiliate/Promote.jpg");
   background-size: cover;
 }
 

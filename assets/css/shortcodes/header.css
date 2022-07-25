@@ -55,6 +55,7 @@ Top Bar
 .menuzord .menuzord-menu>li:hover>a,
 .menuzord .menuzord-menu>li:hover>a>i{
     color: #03a9f4 !important;
+    font-weight: bold;
 }
 
 .nav-border-bottom .menuzord .menuzord-menu>li.active>a,
@@ -558,7 +559,7 @@ header.sticky .menuzord-menu>li>a,
     height: 3px;
     margin: 3.5px 0px 0;
     float: right;
-    background: #777
+    background: #ffffff;
 }
 .menuzord-menu>li>a>i {
     margin: 0 5px 0 0;
@@ -981,7 +982,7 @@ Responsive Menu
 
     #header.transparent-header .dark-header,
     #header.transparent-header .semi-transparent  {
-        background: rgba(10, 10, 10, 1) !important;
+        background: #d30023 !important;
     }
 
     /*-------------------------*/

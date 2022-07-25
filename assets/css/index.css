@@ -248,7 +248,7 @@
 }
 .card .circle .box span,
 .wrapper .card .text{
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #0da000 , #d30023 );
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: none; */
 }

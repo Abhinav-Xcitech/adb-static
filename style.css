@@ -685,7 +685,7 @@ thead {
     color: #0288d1 !important;
 }
 .brand-bg {
-    background-color: #03a9f4 !important; /*theme primary background color*/
+    background-color: #d30023  !important; /*theme primary background color*/
 }
 
 .brand-bg.darken-2 {
@@ -869,7 +869,9 @@ thead {
 }
 .equal-wrapper-content {
     padding: 0 120px;
+    text-align: center;
 }
+
 .equal-wrapper-content .featured-item .icon {
     float: left;
     margin-right: 35px;
@@ -1605,6 +1607,7 @@ nav ul li {
 nav ul li:hover, 
 nav ul li.active {
     background-color: transparent;
+    font-weight: bold;
 }
 nav ul a {
     font-size: inherit;

@@ -19,6 +19,10 @@ Common featured boxes
 
 .featured-item .icon {
     font-size: 30px; /*global font size*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
 }
 .featured-item .icon .material-icons {
     font-size: 40px;
