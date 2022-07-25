@@ -177,13 +177,13 @@ Header
 #header.transparent-header.sticky .dark-header,
 .dark-nav,
 .tt-nav.sticky .semi-transparent {
-    background: rgba(10,10,10, 1) !important;
+    background:#d30023 !important;
 }
 
 
 @media (min-width: 769px) {
     .semi-transparent{
-        background: rgba(10,10,10, .5) !important;
+        background:#d30023 !important;
     } 
 }
 
@@ -200,7 +200,17 @@ Top mega menu
 .menuzord {
     background: none;
     padding: 0;
+    
 }
+
+@media (min-width: 769px) {
+    .menuzord {
+     
+        display: flex ;
+        justify-content: space-between;
+    } 
+}
+
 
 
 .menuzord-menu>li>a,
