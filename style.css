@@ -679,7 +679,7 @@ thead {
 
 /* ================= Color Presets ==================== */
 .brand-color {
-    color: #03a9f4 !important; /*theme primary color*/
+    color: #d30023   !important; /*theme primary color*/
 }
 .brand-color.darken-2 {
     color: #0288d1 !important;
@@ -1106,7 +1106,7 @@ thead {
     background-image: url("assets/img/banner/banner-6.jpg");  
 }
 .banner-7 {
-    background-image: url("assets/img/Main\ Picture.jpg");  
+    background-image: url("assets/img/affiliate/Main\ Picture.webp");  
 }
 .banner-8 {
     background-image: url("assets/img/banner/banner-8.jpg");

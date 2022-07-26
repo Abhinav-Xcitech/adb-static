@@ -80,7 +80,7 @@
   display: block;
   color: #000000 !important;
 }
-  
+
 .text-content .detailes{
   font-size: 18px;
   display: block;
@@ -170,12 +170,12 @@
 }
 
 .slide-2 {
-  background: url("../img/affiliate/paid.webp");
+  background: url("../img/affiliate/Promote.webp");
   background-size: cover;
 }
 
 .slide-3 {
-  background: url("../img/affiliate/Promote.webp");
+  background: url("../img/affiliate/paid.webp");
   background-size: cover;
 }
 
