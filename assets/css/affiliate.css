@@ -103,16 +103,26 @@
 
 
 
+.swiper-slide-container{
+  height: 100%;
 
+}
 
 .swiper-slide {
   min-height: 600px;
-  max-height: fit-content;
+  height: 100%;
   text-align: center;
 }
 
 .slider-container {
-  padding: 100px;
+
+  padding: 50px;
+  height: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 100px; */
 }
 
 
@@ -123,8 +133,9 @@
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 9.2px;
   color: #ffffff;
+  letter-spacing: 3px;
+
 }
 
 .slider-title {
@@ -133,15 +144,12 @@
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: -1.03px;
   color: #ffffff;
   padding: 50px 0px;
   opacity: 1;
+  letter-spacing: 7.2px;
+
 }
-
-
-
-
 
 
 .slider-buttton {
@@ -157,17 +165,17 @@
 
 
 .slide-1 {
-  background: url("../img/affiliate/Connect.jpg");
+  background: url("../img/affiliate/Connect.webp");
   background-size: cover;
 }
 
 .slide-2 {
-  background: url("../img/affiliate/paid.jpg");
+  background: url("../img/affiliate/paid.webp");
   background-size: cover;
 }
 
 .slide-3 {
-  background: url("../img/affiliate/Promote.jpg");
+  background: url("../img/affiliate/Promote.webp");
   background-size: cover;
 }
 
@@ -194,3 +202,82 @@
 .swiper-slide-active .slider-buttton {
   animation: zoomIn 2s;
 }
+
+
+/* Publisher Page */
+
+.banner{
+  background: url("../img/affiliate/Publisher.webp");
+  background-size: cover;
+  background-position:  40% 30%;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner .container{
+  height: 100%;
+}
+
+.banner .banner-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .banner-content .sub-title-text {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: rgb(113, 109, 109);
+  letter-spacing: 3px;
+  margin: 30px 0;
+  max-width: 700px;
+
+}
+
+.banner .banner-content .title-text {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: rgb(134, 134, 134);
+  padding: 30px 0px;
+  opacity: 1;
+  letter-spacing: 7.2px;
+  max-width: 500px;
+
+}
+
+
+.banner .banner-content .slider-buttton {
+  font-weight: 600;
+  letter-spacing: 1.29px;
+  border: solid 1px #ffffff;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* Publisher Page */
+
+@media only screen and (min-width: 768px) {
+
+  .banner{
+    height: 70vh;
+  }
+  .banner .banner-content .sub-title-text {
+    font-size: 20px;
+  }
+  .banner .banner-content .title-text {
+    font-size: 35px;
+  }
+  .banner .banner-content .slider-buttton {
+    font-size: 30px;
+  }
+}
+  

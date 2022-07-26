@@ -54,7 +54,7 @@ Top Bar
 .menuzord .menuzord-menu>li.active>a>i,
 .menuzord .menuzord-menu>li:hover>a,
 .menuzord .menuzord-menu>li:hover>a>i{
-    color: #03a9f4 !important;
+    color: #ffffff !important;
     font-weight: bold;
 }
 
@@ -1013,7 +1013,7 @@ Responsive Menu
     .light.menuzord-menu > li > a > i, 
     .tt-nav .dark-header .menuzord-menu > li > a, 
     .tt-nav .dark-header .menuzord-menu > li > a > i {
-        color: #333;
+        color: #ffffff;
     }
 
     .tt-nav.sticky .menuzord-menu>li>a {
