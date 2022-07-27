@@ -59,6 +59,8 @@ body{
     -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
+    scroll-behavior: smooth !important;
+
 }
 
 html {
@@ -904,7 +906,7 @@ thead {
 
 .section-title {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .section-sub {
     margin: 0 auto;

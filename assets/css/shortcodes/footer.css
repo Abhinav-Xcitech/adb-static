@@ -316,9 +316,7 @@ Footer 4
     width: 100px;
     height: auto;
 }
-.footer-intro p {
-    margin: 0 auto 70px;
-}
+
 
 @media (min-width: 992px) {
     .footer-intro p {
@@ -452,4 +450,8 @@ Footer 5
     .footer-five .secondary-footer ul {
         text-align: center;
     }
+}
+
+.footer-map{
+    max-width: 400px;
 }

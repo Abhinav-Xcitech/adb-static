@@ -1,5 +1,12 @@
 
 /* Slider */
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  scroll-behavior: smooth;
+}
 
 .slick-slide {
     margin: 0px 20px;
@@ -119,8 +126,8 @@
 
 
 .border{
-  height: 250px;
-  max-height: 250px;
+  height: 280px;
+  max-height: 280px;
   padding: 20px;
 }
 
