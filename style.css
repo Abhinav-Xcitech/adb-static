@@ -698,6 +698,11 @@ thead {
 	background-color: #03a9f4 !important; /*theme primary hover color*/
 }
 
+.brand-hover:hover .brand-hover .btn-primary {
+	background-color: #000 !important; /*theme primary hover color*/
+}
+
+
 
 
 .green-bg {

@@ -201,6 +201,10 @@ Common featured boxes
     transition: all 0.4s ease;
 }
 
+.hover:hover a.btn {
+    background-color: #fff !important;
+    color: #03a9f4 !important;
+}
 
 
 
