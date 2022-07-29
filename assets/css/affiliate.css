@@ -75,7 +75,7 @@
 }
 
 .text-content .header{
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   display: block;
   color: #000000 !important;
@@ -240,7 +240,7 @@
 }
 
 .banner .banner-content .title-text {
-  font-size: 30px;
+  font-size: 20px !important;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -248,8 +248,8 @@
   color:#ffffff;
   padding: 30px 0px;
   opacity: 1;
-  letter-spacing: 7.2px;
-  max-width: 500px;
+  letter-spacing: 5.2px;
+  max-width: 700px;
 
 }
 
@@ -263,6 +263,80 @@
   font-size: 24px;
   text-decoration: none;
 }
+
+
+.blog-and-editorials{
+  background: url("../img/affiliate/Advertiser.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.online-communities{
+  background: url("../img/affiliate/Affiliate\ Home\ page.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-sites{
+  background: url("../img/affiliate/Promote.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mobile-apps{
+  background: url("../img/affiliate/Advertiser.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.content-networks{
+  background: url("../img/affiliate/paid.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.commercial-platforms{
+  background: url("../img/affiliate/Publisher.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
 /* Publisher Page */
 
 @media only screen and (min-width: 768px) {
@@ -281,3 +355,4 @@
   }
 }
   
+
