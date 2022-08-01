@@ -1,0 +1,588 @@
+header .carousel-inner .item {
+  height: 100vh;
+}
+header .carousel-inner .item img {
+  width: 100%;
+}
+.carousel-caption {
+  padding-bottom: 150px;
+}
+.carousel-caption h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control.left {
+  background-image: none;
+}
+
+/* ignore the code below */
+
+.link-area {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px;
+  border-radius: 40px;
+  background: tomato;
+}
+.link-area a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.header-text {
+  font-size: 26px !important;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+  color: #000000 !important;
+}
+
+.header-subheading {
+  font-size: 18px;
+  text-transform: capitalize;
+  display: block;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.details-section {
+  height: 100%;
+  align-items: center;
+}
+
+.text-content {
+  height: 100%;
+  padding: 30px;
+}
+.img-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-content .header {
+  font-size: 24px;
+  text-transform: uppercase;
+  display: block;
+  color: #000000 !important;
+}
+
+.text-content .detailes {
+  font-size: 18px;
+  display: block;
+  margin: 20px 0;
+}
+
+.img-content .img {
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-content .img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.swiper-slide-container {
+  height: 100%;
+}
+
+.swiper-slide {
+  min-height: 600px;
+  height: 100%;
+  text-align: center;
+}
+
+.slider-container {
+  padding: 50px;
+  height: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 100px; */
+}
+
+.slider-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+.slider-title {
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #ffffff;
+  padding: 50px 0px;
+  opacity: 1;
+  letter-spacing: 7.2px;
+}
+
+.slider-buttton {
+  font-weight: 600;
+  letter-spacing: 1.29px;
+  border: solid 1px #ffffff;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+// .slide-1 {
+//   background: url("./assets/img/affiliate/Connect.webp");
+//   background-size: cover;
+// }
+
+// .slide-2 {
+//   background: url("/assets/img/affiliate/paid.webp");
+//   background-size: cover;
+// }
+
+// .slide-3 {
+//   background: url("assets/img/affiliate/paid.webp");
+//   background-size: cover;
+// }
+
+.slider-buttton {
+  display: inline-block;
+}
+
+.swiper-slide-active .slider-sub-title {
+  animation: rollIn 1s;
+}
+
+.swiper-slide-active .slider-title {
+  animation: fadeInUp 1.5s;
+}
+.swiper-slide-active.slide-2 .slider-title {
+  animation: fadeInRight 1.5s;
+}
+.swiper-slide-active.slide-3 .slider-title {
+  animation: fadeInLeft 1.5s;
+}
+
+.swiper-slide-active .slider-buttton {
+  animation: zoomIn 2s;
+}
+
+.details-section {
+  margin-top: 50px;
+  min-height: 100%;
+  align-items: flex-start;
+  .text-content {
+    height: 100%;
+    padding: 30px;
+    ul {
+      li {
+        font-size: 18px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        color: #000000;
+        list-style-type: disc !important;
+        margin: 15px 0;
+      }
+    }
+  }
+  
+  .img-content{
+    height: 100%;
+    width: 100%;
+    .img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      img{
+        width: 100%;
+        height: auto;
+        max-height:700px;
+    }
+    }
+
+  }
+
+}
+
+.details-section-second {
+  margin-top: 50px;
+  min-height: 100%;
+  align-items: flex-start;
+  .text-content {
+    height: 100%;
+    padding: 30px;
+    ul {
+      li {
+        font-size: 18px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        color: #000000;
+        list-style-type: disc !important;
+        margin: 15px 0;
+      }
+    }
+  }
+  
+  .img-content{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      img{
+        width: 100%;
+        height: auto;
+        max-height:800px;
+    }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Publisher Page */
+
+.banner {
+  background: url("../img/affiliate/paid.webp");
+  background-size: cover;
+  background-position: 40% 30%;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner .container {
+  height: 100%;
+}
+
+.banner .banner-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .banner-content .sub-title-text {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 30px 0;
+  max-width: 700px;
+}
+
+.banner .banner-content .title-text {
+  font-size: 20px !important;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #ffffff;
+  padding: 30px 0px;
+  opacity: 1;
+  letter-spacing: 5.2px;
+  max-width: 700px;
+}
+
+.banner .banner-content .slider-buttton {
+  font-weight: 600;
+  letter-spacing: 1.29px;
+  border: solid 1px #ffffff;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.blog-and-editorials {
+  background: url("../img/affiliate/Advertiser.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.online-communities {
+  background: url("../img/affiliate/Affiliate\ Home\ page.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-sites {
+  background: url("../img/affiliate/Promote.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mobile-apps {
+  background: url("../img/affiliate/Advertiser.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.content-networks {
+  background: url("../img/affiliate/paid.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.commercial-platforms {
+  background: url("../img/affiliate/Publisher.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Publisher Page */
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 70vh;
+  }
+  .banner .banner-content .sub-title-text {
+    font-size: 20px;
+  }
+  .banner .banner-content .title-text {
+    font-size: 35px;
+  }
+  .banner .banner-content .slider-buttton {
+    font-size: 30px;
+  }
+}
+
+/* universal-tracking*/
+
+.swipperWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul.Overview-list li {
+  list-style-type: disc !important;
+  font-size: 18px;
+  color: #000000;
+  margin: 15px 0;
+}
+
+.top-features,
+.Integration {
+  .card {
+    padding: 20px;
+    box-shadow: none;
+    border: none;
+    .img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 300px;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 5px 0 #00000029, 0 2px 10px 0 #0000001f !important;
+      border: 1px solid #0000002d !important;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+.the-recipie,
+.behind-the-scenes,
+.major-benefits-for-you,
+.Integration,
+.Satisfied {
+  padding: 50px 0;
+  ul {
+    li {
+      list-style-type: disc !important;
+      font-size: 18px;
+      margin: 15px 0;
+      color: #000000;
+    }
+  }
+}
+
+.major-benefits-for-you {
+  .img {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0 25px;
+    }
+  }
+}
+.Integration {
+  .img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.how-much-will-it-cost-you {
+  .img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-top: 30px;
+
+    img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+}
+
+.thank-you {
+  .thank-you-banner {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background: url("../../img/universal-tracking/hand-shake.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      line-height: 1.375em;
+      color: #ffffff;
+      text-shadow: 0 2px 2px #00000080;
+      margin: 0.1em 0;
+      font-family: Montserrat;
+      font-weight: 600;
+    }
+
+    .lined-button {
+      border: 3px solid #03a9f4;
+      background: transparent;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+/* universal-tracking*/
