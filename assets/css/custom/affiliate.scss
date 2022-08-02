@@ -57,10 +57,7 @@ header .carousel-inner .item img {
   align-items: center;
 }
 
-.text-content {
-  height: 100%;
-  padding: 30px;
-}
+
 .img-content {
   width: 100%;
   height: 100%;
@@ -72,12 +69,15 @@ header .carousel-inner .item img {
   text-transform: uppercase;
   display: block;
   color: #000000 !important;
+ 
 }
 
 .text-content .detailes {
   font-size: 18px;
   display: block;
   margin: 20px 0;
+  
+  color: #999 !important;
 }
 
 .img-content .img {
@@ -183,21 +183,22 @@ header .carousel-inner .item img {
 }
 
 .details-section {
-  margin-top: 50px;
   min-height: 100%;
+  padding: 70px;
+  margin-top: 30px;
   align-items: flex-start;
   .text-content {
     height: 100%;
-    padding: 30px;
     ul {
       li {
         font-size: 18px;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.5;
-        color: #000000;
+        color: #999;
         list-style-type: disc !important;
         margin: 15px 0;
+       
       }
     }
   }
@@ -222,6 +223,8 @@ header .carousel-inner .item img {
 
 .details-section-second {
   margin-top: 50px;
+  padding: 70px;
+  
   min-height: 100%;
   align-items: flex-start;
   .text-content {
@@ -233,9 +236,10 @@ header .carousel-inner .item img {
         font-style: normal;
         font-stretch: normal;
         line-height: 1.5;
-        color: #000000;
+        color: #999;
         list-style-type: disc !important;
         margin: 15px 0;
+       
       }
     }
   }
@@ -243,7 +247,6 @@ header .carousel-inner .item img {
   .img-content{
     height: 100%;
     width: 100%;
-    margin-bottom: 10px;
 
     .img{
       height: 100%;
@@ -251,13 +254,39 @@ header .carousel-inner .item img {
       object-fit: cover;
       img{
         width: 100%;
-        height: auto;
+        height: 100%;
         max-height:800px;
     }
     }
 
   }
 
+}
+
+.benefits-of-joining-us{
+  .card{
+    min-height: 330px;
+    padding-top:10px ;
+    .icon{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   
+      img{
+        width:70px;
+        height: 70px;
+        object-fit: contain;
+      }
+    }
+    .title{
+      font-size: 22px !important;
+      font-weight: 500;
+      text-align: center;
+      margin: 20px 0px;
+      color: #000000;
+     
+    }
+  }
 }
 
 
@@ -276,7 +305,7 @@ header .carousel-inner .item img {
 /* Publisher Page */
 
 .banner {
-  background: url("../img/affiliate/paid.webp");
+  background: url("../../img/affiliate/paid.webp");
   background-size: cover;
   background-position: 40% 30%;
   height: 100vh;
@@ -330,23 +359,28 @@ header .carousel-inner .item img {
   text-decoration: none;
 }
 
-.blog-and-editorials {
-  background: url("../img/affiliate/Advertiser.webp");
-  background-size: cover;
-  /* background-position:  50% 50%; */
-  height: 100%;
-  min-height: 250px;
 
+
+.blog-and-editorials {
+  background: url("../../img/publishers/Blog.png");
+  background-size: contain;
+  background-position:  50% 50%; 
+  background-repeat: no-repeat;
+   height: auto;
+
+  min-height: 250px;
   max-height: 400px;
   width: 100%;
   overflow: hidden;
 }
 
 .online-communities {
-  background: url("../img/affiliate/Affiliate\ Home\ page.webp");
-  background-size: cover;
-  /* background-position:  50% 50%; */
-  height: 100%;
+  background: url("../../img/publishers/communities.png");
+  background-size: contain;
+background-position:  50% 50%; 
+  background-repeat: no-repeat;
+   height: auto;
+
   min-height: 250px;
   max-height: 400px;
   width: 100%;
@@ -354,10 +388,12 @@ header .carousel-inner .item img {
 }
 
 .news-sites {
-  background: url("../img/affiliate/Promote.webp");
-  background-size: cover;
-  /* background-position:  50% 50%; */
-  height: 100%;
+  background: url("../../img/publishers/New\ sites.png");
+  background-size: contain;
+background-position:  50% 50%; 
+  background-repeat: no-repeat;
+   height: auto;
+
   min-height: 250px;
 
   max-height: 400px;
@@ -366,33 +402,38 @@ header .carousel-inner .item img {
 }
 
 .mobile-apps {
-  background: url("../img/affiliate/Advertiser.webp");
-  background-size: cover;
-  /* background-position:  50% 50%; */
-  height: 100%;
+  background: url("../../img/publishers/Mobile\ App.png");
+  background-size: contain;
+background-position:  50% 50%; 
+  background-repeat: no-repeat;
+   height: auto;
+
   min-height: 250px;
   max-height: 400px;
   width: 100%;
   overflow: hidden;
 }
 .content-networks {
-  background: url("../img/affiliate/paid.webp");
-  background-size: cover;
-  /* background-position:  50% 50%; */
-  height: 100%;
+  background: url("../../img/publishers/Content\ .png");
+  background-size: contain;
+background-position:  50% 50%; 
+  background-repeat: no-repeat;
+   height: auto;
+
   min-height: 250px;
   max-height: 400px;
   width: 100%;
   overflow: hidden;
 }
 .commercial-platforms {
-  background: url("../img/affiliate/Publisher.webp");
-  background-size: cover;
-  /* background-position:  50% 50%; */
-  height: 100%;
+  background: url("../../img/publishers/commercials\ .png");
+  background-size: contain;
+  background-position:  50% 50%; 
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
   min-height: 250px;
   max-height: 400px;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -412,6 +453,47 @@ header .carousel-inner .item img {
     font-size: 30px;
   }
 }
+
+
+.advertiserspage {
+  min-height: 100%;
+  align-items: flex-start;
+  .text-content {
+    height: 100%;
+    .header-subheading{
+      text-align: start;
+      margin-left: 20px;
+      color: #000000;
+      font-size: 16px;  
+    }
+      
+    ul {
+      li {
+
+        line-height: 1.5;
+        list-style-type: disc !important;
+        margin: 30px 0 10px;
+        
+        .list-header{
+          font-size: 20px !important;
+          display: block;
+          font-weight: 500 !important;
+          color: #000000 !important;
+        }
+        
+        .list-body{
+          display: block;
+         font-size: 16px;
+         color: #999;
+
+       }
+       
+      }
+    }
+  }
+}
+  
+
 
 /* universal-tracking*/
 

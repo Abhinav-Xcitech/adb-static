@@ -318,11 +318,7 @@ Footer 4
 }
 
 
-@media (min-width: 992px) {
-    .footer-intro p {
-        width: 60%;
-    }
-}
+
 
 .footer-four .secondary-footer {
     padding: 18px 0;

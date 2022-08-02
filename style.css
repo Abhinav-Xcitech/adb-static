@@ -152,9 +152,9 @@ hr {
 .btn {
     height: 50px;
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #03a9f4; /*brand primary color*/
     border: 0;
 }
