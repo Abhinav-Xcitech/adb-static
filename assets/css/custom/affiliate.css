@@ -72,7 +72,7 @@ header .carousel-inner .item img {
 }
 
 .text-content .header {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   display: block;
   color: #000000 !important;
@@ -228,7 +228,7 @@ header .carousel-inner .item img {
 .details-section .img-content .img img {
   width: 100%;
   height: auto;
-  max-height: 700px;
+  max-height: 500px;
   border-radius: 10px;
 }
 
@@ -317,10 +317,42 @@ header .carousel-inner .item img {
 
 /* Publisher Page */
 .banner {
-  background: url("../../img/affiliate/paid.webp");
   background-size: cover;
   background-position: 40% 30%;
-  height: 100vh;
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.advertiser-main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/affiliate/Advertiser main.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/affiliate/Advertiser main.jpg");
+  background-position: center top;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.publisher-main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/affiliate/publisher main.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/affiliate/publisher main.jpg");
+  background-position: center top;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.influencer-main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/affiliate/Influencer Main.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/affiliate/Influencer Main.jpg");
+  background-position: center top;
+  background-size: cover;
+  height: auto;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -511,8 +543,14 @@ header .carousel-inner .item img {
 
 .advertiserspage .text-content ul li .list-body {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   color: #999;
+}
+
+.advertiserspage .img-content img {
+  width: 100%;
+  height: 100%;
+  max-height: 750px;
 }
 
 @media only screen and (min-width: 768px) {
