@@ -5332,7 +5332,9 @@ small {
     font-size: 24px;
     font-weight: 300; }
     .card .card-title.activator {
-      cursor: pointer; }
+      cursor: pointer; 
+      max-height: 250px;
+    }
   .card a {
     color: #ffab40;
     margin-right: 20px;
@@ -5360,6 +5362,7 @@ small {
       right: 0; }
   .card .card-image {
     position: relative;
+    max-height: 250px;
     overflow: hidden; }
     .card .card-image img {
       -webkit-border-radius: 2px 2px 0 0;
