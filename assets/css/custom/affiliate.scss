@@ -48,7 +48,7 @@ header .carousel-inner .item img {
   text-transform: capitalize;
   display: block;
   text-align: center;
-  max-width: 750px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -460,11 +460,22 @@ background-position:  50% 50%;
   align-items: flex-start;
   .text-content {
     height: 100%;
-    .header-subheading{
-      text-align: start;
+    .header-heading{
+          font-size: 20px !important;
+          display: block;
+          font-weight: 500 !important;
+          color: #000000 !important;
+          text-align: start;
+          margin-left: 20px;
+          
+        }
+        .header-subheading{
       margin-left: 20px;
-      color: #000000;
-      font-size: 16px;  
+      display: block;
+      font-size: 16px;
+      color: #999;
+      text-align: start;
+
     }
       
     ul {

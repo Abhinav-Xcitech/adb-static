@@ -548,7 +548,7 @@ header.sticky .menuzord-menu>li>a,
     width: 30px;
     height: 46px;
     padding: 12px 0 0;
-    display: none;
+    
     float: right;
     text-decoration: none;
     outline: 0;
@@ -874,9 +874,7 @@ Responsive Menu
         margin: 0
     }
 
-    .has-header-search .menuzord-responsive .showhide {
-        margin-right: 40px;
-    }
+   
 
     .menuzord-responsive .menuzord-menu {
         width: 100%;
