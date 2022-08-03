@@ -98,6 +98,7 @@ header .carousel-inner .item img {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 10px;
 }
 
 .swiper-slide-container {
@@ -190,7 +191,7 @@ header .carousel-inner .item img {
 
 .details-section {
   min-height: 100%;
-  padding: 70px;
+  padding: 50px;
   margin-top: 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -199,6 +200,7 @@ header .carousel-inner .item img {
 
 .details-section .text-content {
   height: 100%;
+  margin-top: 50px;
 }
 
 .details-section .text-content ul li {
@@ -227,11 +229,11 @@ header .carousel-inner .item img {
   width: 100%;
   height: auto;
   max-height: 700px;
+  border-radius: 10px;
 }
 
 .details-section-second {
-  margin-top: 50px;
-  padding: 70px;
+  padding: 50px;
   min-height: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -240,7 +242,7 @@ header .carousel-inner .item img {
 
 .details-section-second .text-content {
   height: 100%;
-  padding: 30px;
+  margin-top: 50px;
 }
 
 .details-section-second .text-content ul li {
@@ -269,6 +271,16 @@ header .carousel-inner .item img {
   width: 100%;
   height: 100%;
   max-height: 800px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .details-section .text-content {
+    margin-top: 0;
+  }
+  .details-section-second .text-content {
+    margin-top: 0;
+  }
 }
 
 .benefits-of-joining-us .card {
