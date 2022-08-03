@@ -464,6 +464,7 @@ header .carousel-inner .item img {
 
 .advertiserspage .text-content {
   height: 100%;
+  margin-top: 50px;
 }
 
 .advertiserspage .text-content .header-heading {
@@ -500,6 +501,12 @@ header .carousel-inner .item img {
   display: block;
   font-size: 16px;
   color: #999;
+}
+
+@media only screen and (min-width: 768px) {
+  .advertiserspage .text-content {
+    margin-top: 0px;
+  }
 }
 
 /* universal-tracking*/
@@ -685,4 +692,47 @@ ul.Overview-list li {
 }
 
 /* universal-tracking*/
+/* influencer*/
+.Influencer-card-view .card .img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.Influencer-card-view .card .img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Influencer-card-view .card .text-content {
+  padding: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+}
+
+.Influencer-card-view .card .text-content .title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.Influencer-card-view .card .text-content .sub-title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* influencer*/
 /*# sourceMappingURL=affiliate.css.map */

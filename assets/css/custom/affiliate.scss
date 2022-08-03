@@ -57,7 +57,6 @@ header .carousel-inner .item img {
   align-items: center;
 }
 
-
 .img-content {
   width: 100%;
   height: 100%;
@@ -69,14 +68,13 @@ header .carousel-inner .item img {
   text-transform: uppercase;
   display: block;
   color: #000000 !important;
- 
 }
 
 .text-content .detailes {
   font-size: 18px;
   display: block;
   margin: 20px 0;
-  
+
   color: #999 !important;
 }
 
@@ -198,33 +196,30 @@ header .carousel-inner .item img {
         color: #999;
         list-style-type: disc !important;
         margin: 15px 0;
-       
       }
     }
   }
-  
-  .img-content{
+
+  .img-content {
     height: 100%;
     width: 100%;
-    .img{
+    .img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      img{
+      img {
         width: 100%;
         height: auto;
-        max-height:700px;
+        max-height: 700px;
+      }
     }
-    }
-
   }
-
 }
 
 .details-section-second {
   margin-top: 50px;
   padding: 70px;
-  
+
   min-height: 100%;
   align-items: flex-start;
   .text-content {
@@ -239,68 +234,51 @@ header .carousel-inner .item img {
         color: #999;
         list-style-type: disc !important;
         margin: 15px 0;
-       
       }
     }
   }
-  
-  .img-content{
+
+  .img-content {
     height: 100%;
     width: 100%;
 
-    .img{
+    .img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      img{
+      img {
         width: 100%;
         height: 100%;
-        max-height:800px;
+        max-height: 800px;
+      }
     }
-    }
-
   }
-
 }
 
-.benefits-of-joining-us{
-  .card{
+.benefits-of-joining-us {
+  .card {
     min-height: 330px;
-    padding-top:10px ;
-    .icon{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   
-      img{
-        width:70px;
+    padding-top: 10px;
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 70px;
         height: 70px;
         object-fit: contain;
       }
     }
-    .title{
+    .title {
       font-size: 22px !important;
       font-weight: 500;
       text-align: center;
       margin: 20px 0px;
       color: #000000;
-     
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Publisher Page */
 
@@ -359,14 +337,12 @@ header .carousel-inner .item img {
   text-decoration: none;
 }
 
-
-
 .blog-and-editorials {
   background: url("../../img/publishers/Blog.png");
   background-size: contain;
-  background-position:  50% 50%; 
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-   height: auto;
+  height: auto;
 
   min-height: 250px;
   max-height: 400px;
@@ -377,9 +353,9 @@ header .carousel-inner .item img {
 .online-communities {
   background: url("../../img/publishers/communities.png");
   background-size: contain;
-background-position:  50% 50%; 
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-   height: auto;
+  height: auto;
 
   min-height: 250px;
   max-height: 400px;
@@ -390,9 +366,9 @@ background-position:  50% 50%;
 .news-sites {
   background: url("../../img/publishers/New\ sites.png");
   background-size: contain;
-background-position:  50% 50%; 
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-   height: auto;
+  height: auto;
 
   min-height: 250px;
 
@@ -404,9 +380,9 @@ background-position:  50% 50%;
 .mobile-apps {
   background: url("../../img/publishers/Mobile\ App.png");
   background-size: contain;
-background-position:  50% 50%; 
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-   height: auto;
+  height: auto;
 
   min-height: 250px;
   max-height: 400px;
@@ -416,9 +392,9 @@ background-position:  50% 50%;
 .content-networks {
   background: url("../../img/publishers/Content\ .png");
   background-size: contain;
-background-position:  50% 50%; 
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-   height: auto;
+  height: auto;
 
   min-height: 250px;
   max-height: 400px;
@@ -428,7 +404,7 @@ background-position:  50% 50%;
 .commercial-platforms {
   background: url("../../img/publishers/commercials\ .png");
   background-size: contain;
-  background-position:  50% 50%; 
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
@@ -454,57 +430,58 @@ background-position:  50% 50%;
   }
 }
 
-
 .advertiserspage {
   min-height: 100%;
   align-items: flex-start;
   .text-content {
     height: 100%;
-    .header-heading{
-          font-size: 20px !important;
-          display: block;
-          font-weight: 500 !important;
-          color: #000000 !important;
-          text-align: start;
-          margin-left: 20px;
-          
-        }
-        .header-subheading{
+    margin-top: 50px;
+    .header-heading {
+      font-size: 20px !important;
+      display: block;
+      font-weight: 500 !important;
+      color: #000000 !important;
+      text-align: start;
+      margin-left: 20px;
+    }
+    .header-subheading {
       margin-left: 20px;
       display: block;
       font-size: 16px;
       color: #999;
       text-align: start;
-
     }
-      
+
     ul {
       li {
-
         line-height: 1.5;
         list-style-type: disc !important;
         margin: 30px 0 10px;
-        
-        .list-header{
+
+        .list-header {
           font-size: 20px !important;
           display: block;
           font-weight: 500 !important;
           color: #000000 !important;
         }
-        
-        .list-body{
-          display: block;
-         font-size: 16px;
-         color: #999;
 
-       }
-       
+        .list-body {
+          display: block;
+          font-size: 16px;
+          color: #999;
+        }
       }
     }
   }
 }
-  
 
+@media only screen and (min-width: 768px) {
+  .advertiserspage {
+    .text-content {
+      margin-top: 0px;
+    }
+  }
+}
 
 /* universal-tracking*/
 
@@ -679,3 +656,40 @@ ul.Overview-list li {
 }
 
 /* universal-tracking*/
+
+/* influencer*/
+.Influencer-card-view {
+  .card {
+    .img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    .text-content {
+      padding: 20px;
+
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      vertical-align: middle;
+      .title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #000000;
+      }
+      .sub-title {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/* influencer*/
