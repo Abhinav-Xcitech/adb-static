@@ -28,6 +28,9 @@ Common featured boxes
 .featured-item.Advertiser{
     background: url('../../img/index/Advertiser\ tab.webp') no-repeat center center;
 }
+.featured-item.Influencer{
+    background: url('../../img/affiliate/influencer-creating-content-2022-03-06-02-18-04-utc-compressed.jpg') no-repeat center center;
+}
 
 .featured-card-wrapper .featured-item h2{
     color: #ffffff;

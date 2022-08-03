@@ -411,6 +411,10 @@ header .carousel-inner .item img {
   text-decoration: none;
 }
 
+.types-of-publisher .card {
+  min-height: 300px;
+}
+
 .blog-and-editorials {
   background: url("../../img/publishers/Blog.png");
   background-size: contain;
@@ -782,6 +786,16 @@ ul.Overview-list li {
   margin-top: 20px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.card-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card-text {
+  font-size: 18px;
 }
 
 /* influencer*/
