@@ -204,13 +204,24 @@ header .carousel-inner .item img {
   margin-top: 50px;
 }
 
-.details-section .text-content ul li {
+.details-section .text-content .points {
+  margin-top: 20px;
+}
+
+.details-section .text-content .points .icon {
+  margin-right: 20px;
+}
+
+.details-section .text-content .points .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.details-section .text-content .content span {
   font-size: 16px;
   color: #818697;
   font-weight: 400;
   line-height: 1.5;
-  list-style-type: disc !important;
-  margin: 15px 0;
 }
 
 .details-section .img-content {
@@ -221,15 +232,28 @@ header .carousel-inner .item img {
 .details-section .img-content .img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .details-section .img-content .img img {
   width: 100%;
   height: auto;
-  max-height: 500px;
+  max-width: 500px;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .details-section-second {
