@@ -269,13 +269,24 @@ header .carousel-inner .item img {
   margin-top: 50px;
 }
 
-.details-section-second .text-content ul li {
+.details-section-second .text-content .points {
+  margin-top: 20px;
+}
+
+.details-section-second .text-content .points .icon {
+  margin-right: 20px;
+}
+
+.details-section-second .text-content .points .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.details-section-second .text-content .content span {
   font-size: 16px;
   color: #818697;
   font-weight: 400;
   line-height: 1.5;
-  list-style-type: disc !important;
-  margin: 15px 0;
 }
 
 .details-section-second .img-content {
