@@ -39,6 +39,9 @@
 
 /* Import css files */
 @import url("assets/fonts/flaticon/flaticon.css");
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+                
 
 /* Google Web Fonts */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
@@ -49,7 +52,7 @@
 /* ================= General ==================== */
 
 body{
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'CircularStd', sans-serif !important;
     font-size: 14px;
     line-height: 29px;
     font-weight: 500;
@@ -64,7 +67,7 @@ body{
 }
 
 html {
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'CircularStd', sans-serif !important;
 }
 
 html,
@@ -226,6 +229,44 @@ button:focus {
 }
 
 
+.section-main-heading{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+
+}
+
+.section-heading-disc{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #bbbdc6
+}
+
+.sub-heading{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000000 ;
+}
+
+.sub-heading-para{
+    font-size: 16px;
+    color: #818697;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
 
 address {
     margin: 30px 0 0;
@@ -344,7 +385,7 @@ thead {
 }
 
 .section-padding {
-    padding: 70px 0;
+    padding: 70px 0 30px;
 }
 
 
@@ -910,17 +951,19 @@ thead {
 
 
 .section-title {
-    font-size: 40px;
-    margin-bottom: 40px;
+   font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
 }
 .section-sub {
-    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    color: #bbbdc6
 }
-@media (min-width: 992px){
-    .section-sub {
-        width: 60%;
-    }
-}
+
 
 .width-60 {
     width: 60%;

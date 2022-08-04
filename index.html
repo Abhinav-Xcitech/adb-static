@@ -38,6 +38,7 @@
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <!-- shortcodes -->
   <link href="assets/css/shortcodes/shortcodes.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <!-- Style CSS -->
   <link href="style.css" rel="stylesheet" />
   <link href="assets/css/index.css" rel="stylesheet" />
@@ -48,6 +49,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+
 </head>
 
 <body id="top" class="has-header-search">
@@ -113,11 +117,13 @@
     <!-- /.valign-cell -->
   </section>
 
-  <section class="section-padding">
+
+
+  <section class="section-padding " style="margin:0; padding-bottom:0; ">
     <div class="container">
-      <div class="text-center mb-80">
-        <h2 class="section-title text-uppercase">Who we are</h2>
-        <p class="section-sub">
+      <div class="text-center mb-40">
+        <h2 class="section-main-heading">Who we are</h2>
+        <p class="section-heading-disc">
           Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed
           ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at
           vestibulum purus, sit amet viverra diam. Nulla ac nisi rhoncus,
@@ -125,115 +131,88 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="icon-tab">
-            <div class="text-center">
-              <ul class="nav nav-pills" role="tablist">
-                <li role="presentation">
-                  <a href="#icontab-1" class="waves-effect waves-light" role="tab" data-toggle="tab">
-                    <i class="material-icons"></i></a>
-                </li>
-                <li role="presentation" class="active">
-                  <a href="#icontab-2" class="waves-effect waves-light" role="tab" data-toggle="tab">
-                    <i class="material-icons"></i></a>
-                </li>
-                <li role="presentation">
-                  <a href="#icontab-3" class="waves-effect waves-light" role="tab" data-toggle="tab">
-                    <i class="material-icons"></i></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="panel-body mt-40">
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade" id="icontab-1">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h2 class="text-bold mb-40">About us</h2>
-                      <p>
-                        Himenaeos a vestibulum morbi.
-                        <a href="#">Ullamcorper cras scelerisque</a> taciti
-                        lorem metus feugiat est lacinia facilisis id nam leo
-                        condimentum praesent id diam. Vestibulum amet porta
-                        odio elementum convallis parturient tempor tortor
-                        tempus a mi ad parturient ad nulla mus amet in
-                        penatibus nascetur at vulputate euismod a est
-                        tristique scelerisque. Aliquet facilisis nisl vel
-                        vestibulum dignissim gravida ullamcorper hac quisque
-                        ad at nisl egestas adipiscing vel blandit.
-                      </p>
-                    </div>
-                    <div class="col-md-6">
-                      <img src="assets/img/workstation.jpg" alt="image" class="img-responsive" />
-                    </div>
+          <div class="">
+            <div class="tab-content">
+              <div class="what-we-do slider">
+                <div class="slide">
+                  
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="text-bold mb-40 sub-heading">About us</h2>
+                        <p class="sub-heading-para">
+                          Himenaeos a vestibulum morbi.
+                          <a href="#">Ullamcorper cras scelerisque</a> taciti
+                          lorem metus feugiat est lacinia facilisis id nam leo
+                          condimentum praesent id diam. Vestibulum amet porta
+                          odio elementum convallis parturient tempor tortor
+                          tempus a mi ad parturient ad nulla mus amet in
+                          penatibus nascetur at vulputate euismod a est
+                          tristique scelerisque. Aliquet facilisis nisl vel
+                          vestibulum dignissim gravida ullamcorper hac quisque
+                          ad at nisl egestas adipiscing vel blandit.
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <img src="assets/img/workstation.jpg" alt="image" class="img-responsive" />
+                      </div>
+                 
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade in active" id="icontab-2">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h2 class="text-bold mb-40">Our Mission</h2>
-                      <p>
-                        Himenaeos a vestibulum morbi.
-                        <a href="#">Ullamcorper cras scelerisque</a> taciti
-                        lorem metus feugiat est lacinia facilisis id nam leo
-                        condimentum praesent id diam. Vestibulum amet porta
-                        odio elementum convallis parturient tempor tortor
-                        tempus a mi ad parturient ad nulla mus amet in
-                        penatibus nascetur at vulputate euismod a est
-                        tristique scelerisque. Aliquet facilisis nisl vel
-                        vestibulum dignissim gravida ullamcorper hac quisque
-                        ad at nisl egestas adipiscing vel blandit.
-                      </p>
+                <div class="slide">
+                 
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="text-bold mb-40 sub-heading">Our Mission</h2>
+                        <p class="sub-heading-para">
+                          Himenaeos a vestibulum morbi.
+                          <a href="#">Ullamcorper cras scelerisque</a> taciti
+                          lorem metus feugiat est lacinia facilisis id nam leo
+                          condimentum praesent id diam. Vestibulum amet porta
+                          odio elementum convallis parturient tempor tortor
+                          tempus a mi ad parturient ad nulla mus amet in
+                          penatibus nascetur at vulputate euismod a est
+                          tristique scelerisque. Aliquet facilisis nisl vel
+                          vestibulum dignissim gravida ullamcorper hac quisque
+                          ad at nisl egestas adipiscing vel blandit.
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <img src="assets/img/mission.jpg" alt="image" class="img-responsive" />
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <img src="assets/img/mission.jpg" alt="image" class="img-responsive" />
-                    </div>
-                  </div>
+               
+            
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="icontab-3">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h2 class="text-bold mb-40">What We Do</h2>
-                      <p>
-                        Himenaeos a vestibulum morbi.
-                        <a href="#">Ullamcorper cras scelerisque</a> taciti
-                        lorem metus feugiat est lacinia facilisis id nam leo
-                        condimentum praesent id diam. Vestibulum amet porta
-                        odio elementum convallis parturient tempor tortor
-                        tempus a mi ad parturient ad nulla mus amet in
-                        penatibus nascetur at vulputate euismod a est
-                        tristique scelerisque. Aliquet facilisis nisl vel
-                        vestibulum dignissim gravida ullamcorper hac quisque
-                        ad at nisl egestas adipiscing vel blandit.
-                      </p>
+                <div class="slide">
+                
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="text-bold mb-40  sub-heading">What We Do</h2>
+                        <p class="sub-heading-para">
+                          Himenaeos a vestibulum morbi.
+                          <a href="#">Ullamcorper cras scelerisque</a> taciti
+                          lorem metus feugiat est lacinia facilisis id nam leo
+                          condimentum praesent id diam. Vestibulum amet porta
+                          odio elementum convallis parturient tempor tortor
+                          tempus a mi ad parturient ad nulla mus amet in
+                          penatibus nascetur at vulputate euismod a est
+                          tristique scelerisque. Aliquet facilisis nisl vel
+                          vestibulum dignissim gravida ullamcorper hac quisque
+                          ad at nisl egestas adipiscing vel blandit.
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <img src="assets/img/idea.jpg" alt="" class="img-responsive" />
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <img src="assets/img/idea.jpg" alt="" class="img-responsive" />
-                    </div>
-                  </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="icontab-4">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h2 class="text-bold mb-40">Our Setps</h2>
-                      <p>
-                        Himenaeos a vestibulum morbi.
-                        <a href="#">Ullamcorper cras scelerisque</a> taciti
-                        lorem metus feugiat est lacinia facilisis id nam leo
-                        condimentum praesent id diam. Vestibulum amet porta
-                        odio elementum convallis parturient tempor tortor
-                        tempus a mi ad parturient ad nulla mus amet in
-                        penatibus nascetur at vulputate euismod a est
-                        tristique scelerisque. Aliquet facilisis nisl vel
-                        vestibulum dignissim gravida ullamcorper hac quisque
-                        ad at nisl egestas adipiscing vel blandit.
-                      </p>
-                    </div>
-                    <div class="col-md-6">
-                      <img src="assets/img/workstation2.jpg" alt="image" class="img-responsive" />
-                    </div>
-                  </div>
+               
+            
                 </div>
               </div>
+
+
+            
+
             </div>
           </div>
         </div>
@@ -241,10 +220,10 @@
     </div>
   </section>
 
-  <section class="section-padding" id="our-client">
+  <section class="section-padding">
     <div class="container">
       <div class="text-center mb-80">
-        <h2 class="section-title text-uppercase">OUR SERVICES</h2>
+        <h2 class="section-main-heading text-uppercase ">OUR SERVICES</h2>
         <!-- <p class="section-sub">Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.</p> -->
       </div>
 
@@ -255,8 +234,8 @@
               <img src="assets/Icons/LEAD generation.png" alt="" />
             </div>
             <div class="desc">
-              <h2 class="text-center">LEAD GENERATION</h2>
-              <p class="text-center">
+              <h2 class="text-center sub-heading">LEAD GENERATION</h2>
+              <p class="text-center sub-heading-para">
                 Looking for generating leads? Banking, Financial services,
                 Shopping, Insurance - any vertical, you name it. We help
                 generate quality leads to help grow your business.
@@ -271,8 +250,8 @@
               <img src="assets/Icons/Email _ SMS.png" alt="" />
             </div>
             <div class="desc">
-              <h2 class="text-center">EMAIL & SMS MARKETING</h2>
-              <p class="text-center">
+              <h2 class="text-center sub-heading">EMAIL & SMS MARKETING</h2>
+              <p class="text-center sub-heading-para">
                 One of the oldest and yet still active marketing tool! Try our
                 services at a fraction of the cost today
               </p>
@@ -286,8 +265,8 @@
               <img src="assets/Icons/Influencer.png" alt="" />
             </div>
             <div class="desc">
-              <h2 class="text-center">INFLUENCER MARKETING</h2>
-              <p class="text-center">
+              <h2 class="text-center sub-heading">INFLUENCER MARKETING</h2>
+              <p class="text-center sub-heading-para">
                 Not so new trend now but delivers as promised 😉 Through
                 Facebook, Instagram, Snapchat, Twitter, we help you reach out
                 to end-customers and get them to know your brand.
@@ -302,8 +281,8 @@
               <img src="assets/Icons/Media Buying.png" alt="" />
             </div>
             <div class="desc">
-              <h2 class="text-center">MEDIA BUYING</h2>
-              <p class="text-center">
+              <h2 class="text-center sub-heading">MEDIA BUYING</h2>
+              <p class="text-center sub-heading-para">
                 DSPs, RTBs - you name it. We cover deep inventory located
                 globally for various categories. Media mix is equally
                 important to add in the customer funnel to achieve good
@@ -319,8 +298,8 @@
               <img src="assets/Icons/Mobile Marketing.png" alt="" />
             </div>
             <div class="desc">
-              <h2 class="text-center">MOBILE MARKETING</h2>
-              <p class="text-center">
+              <h2 class="text-center sub-heading">MOBILE MARKETING</h2>
+              <p class="text-center sub-heading-para">
                 We know how important it is to target and retain users in the
                 mobile world today. With our sophisticated technology, we
                 provide support for app-downloads for android and iOS.
@@ -336,8 +315,8 @@
               <img src="assets/Icons/Performance Marketing.png" alt="" />
             </div>
             <div class="desc">
-              <h2 class="text-center">PERFORMANCE MARKETING</h2>
-              <p class="text-center">
+              <h2 class="text-center sub-heading">PERFORMANCE MARKETING</h2>
+              <p class="text-center sub-heading-para">
                 We know how important it is to measure performance for online
                 advertising. Our team of experts know how to reduce cost and
                 drive maximum ROI for you. Using various methods of promotion,
@@ -352,10 +331,10 @@
     </div>
   </section>
 
-  <section class="">
+  <section class="section-padding">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title text-uppercase">OUR Clients</h2>
+        <h2 class="section-main-heading text-uppercase section-main-heading mb-20">OUR Clients</h2>
         <!-- <p class="section-sub">Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.</p> -->
       </div>
 
@@ -390,11 +369,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7">
-          <h2 class="font-30 text-extrabold mb-30 text-uppercase">
+          <h2 class="font-30 text-extrabold mb-30 text-uppercase section-main-heading " style="text-align: left;">
             Affiliate Marketing
           </h2>
 
-          <p>
+          <p class="section-heading-disc text-left" style="text-align: left;">
             Affiliate Marketing Programs are one of the most thriving and
             popular methods for influencers and website holders to earn money
             while spending almost 0 bucks. We all want to earn money and
@@ -424,8 +403,8 @@
           <div class="featured-card-wrapper">
             <div class="featured-item border-box radius-4 Publisher">
               <div class="desc">
-                <h2>Publisher</h2>
-                <p class="mb-5">
+                <h2 class="sub-heading" style="color:#ffffff;">Publisher</h2>
+                <p class="mb-5 sub-heading-para">
                   Get sufficiently close to 1000s of the greatest and best
                   brands around the world, acquire liberal commissions and
                   appreciate quick and successive installments
@@ -441,15 +420,15 @@
           <div class="featured-card-wrapper">
             <div class="featured-item border-box radius-4 Advertiser">
               <div class="desc">
-                <h2>Advertiser</h2>
-                <p>
+                <h2 class="sub-heading" style="color:#ffffff;">Advertiser</h2>
+                <p class="mb-5 sub-heading-para">
                   Our fully-integrated branding and commerce solutions help
                   Advertisers get the most out of their traffic and budget
-                  across <br/> all digital media,
+                  across <br /> all digital media,
                 </p>
               </div>
               <div class="" style="margin-top: 30px">
-                <a href="affiliate.html" class="btn btn-primary mt-5">know more</a>
+                <a href="advertisers.html" class="btn btn-primary mt-5">know more</a>
               </div>
             </div>
           </div>
@@ -459,8 +438,8 @@
           <div class="featured-card-wrapper">
             <div class="featured-item border-box radius-4 Influencer">
               <div class="desc">
-                <h2>Influencer</h2>
-                <p>
+                <h2 class="sub-heading" style="color:#ffffff;">Influencer</h2>
+                <p class="mb-5 sub-heading-para">
                   Connect With Top Brands To Collaborate For Their Product Recommendation And Make The Best Use Of Your
                   Influential Power. It’s As Simple As Getting A Product
                 </p>
@@ -480,8 +459,8 @@
     data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title text-uppercase">OUR Skills</h2>
-        <spam class="section-sub">Built by seasoned marketers with great track record in performance
+        <h2 class="section-main-heading text-uppercase">OUR Skills</h2>
+        <spam class="section-heading-disc">Built by seasoned marketers with great track record in performance
           and branding marketing over the years. Today we provide a holistic
           approach towards delivering end results for the clients through
           various methods of promotions. We believe this helps in mutual
@@ -533,8 +512,8 @@
   <section id="works" class="section-padding">
     <div class="container">
       <div class="text-center mb-80">
-        <h2 class="section-title text-uppercase">Our Team</h2>
-        
+        <h2 class="section-main-heading text-uppercase">Our Team</h2>
+
       </div>
       <div class="portfolio-container">
         <div class="portfolio portfolio-with-title col-3 gutter mtb-50 shuffle" style="
@@ -542,33 +521,91 @@
               height: 820px;
               transition: height 250ms ease-out 0s;
             ">
-          <div class="portfolio-item shuffle-item filtered" data-groups='["all", "branding"]' style="
+            <div class="portfolio-item shuffle-item filtered" data-groups='["all", "marketing", "photography"]' style="
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: translate3d(760px, 410px, 0px) scale3d(1, 1, 1);
+            opacity: 1;
+            transition: transform 250ms ease-out 0s,
+              opacity 250ms ease-out 0s;
+          ">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/img/portfolio/portfolio-6.jpg" alt="image" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator sub-heading ">Ankur
+              <i class="fa fa-ellipsis-v right"></i>
+              <i class="fa fa-heart-o right"></i></span>
+            <p><a href="#">Founder </a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">Ankur <i class="material-icons right"></i></span>
+            <p><a href="#">Founder </a></p>
+            <p>
+             
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item shuffle-item filtered" data-groups='["all", "websites", "branding"]' style="
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+                transform: translate3d(760px, 0px, 0px) scale3d(1, 1, 1);
                 opacity: 1;
                 transition: transform 250ms ease-out 0s,
                   opacity 250ms ease-out 0s;
               ">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/index/Manjeet.webp" alt="image" />
+                <img class="activator" src="assets/img/index/Simran.webp" alt="image" />
               </div>
               <div class="card-content">
-                <span class="card-title activator">Manjeet
+                <span class="card-title activator sub-heading ">Simran
                   <i class="fa fa-ellipsis-v right"></i>
                   <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#"></a></p>
+                <p><a href="#">BD & CS</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title">Manjeet <i class="material-icons right"></i></span>
-                <p><a href="#"></a></p>
+                <span class="card-title">Simran <i class="material-icons right"></i></span>
+                <p><a href="#"></a>BD & CS</p>
                 <p>
-                  I am self-oriented and dedicated person towards my work who
-                  completely believes in hard working. As an Manager I do PPC
-                  (SEM) + Media Buying in digital marketing industry. I love
-                  to play cricket, football as my hobbies.
+                  Hi, this is Simran and I work as an Assistant Manager in Digital Marketing( Business development and
+                  Client Servicing).
+                  I really love my work as I got to know about different brands and specially fashion brands. I am in a
+                  perfect environment where I can grow as a person and make my company grow too.
+                  I love to create fashion, Beauty and lifestyle content on social media.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item shuffle-item filtered" data-groups='["all", "marketing", "photography"]' style="
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                transform: translate3d(760px, 410px, 0px) scale3d(1, 1, 1);
+                opacity: 1;
+                transition: transform 250ms ease-out 0s,
+                  opacity 250ms ease-out 0s;
+              ">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/portfolio/portfolio-6.jpg" alt="image" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator sub-heading ">Harsh 
+                  <i class="fa fa-ellipsis-v right"></i>
+                  <i class="fa fa-heart-o right"></i></span>
+                <p><a href="#">SEM Specalist</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title">Harsh  <i class="material-icons right"></i></span>
+                <p><a href="#">SEM Specalist</a></p>
+                <p>
+                  
                 </p>
               </div>
             </div>
@@ -587,50 +624,18 @@
                 <img class="activator" src="assets/img/index/Muskan.webp" alt="image" />
               </div>
               <div class="card-content">
-                <span class="card-title activator">Muskan
+                <span class="card-title activator sub-heading ">Muskan
                   <i class="fa fa-ellipsis-v right"></i>
                   <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#"></a></p>
+                <p><a href="#"> Content Writing
+                </a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title">Muskan <i class="material-icons right"></i></span>
-                <p><a href="#"></a></p>
+                <p><a href="#"> Content Writing                </a></p>
                 <p>
                   I am very passionate about my work and I do my work with full focus.
                   i like to spend my time with family and friends.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item shuffle-item filtered" data-groups='["all", "websites", "branding"]' style="
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                transform: translate3d(760px, 0px, 0px) scale3d(1, 1, 1);
-                opacity: 1;
-                transition: transform 250ms ease-out 0s,
-                  opacity 250ms ease-out 0s;
-              ">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/index/Simran.webp" alt="image" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator">Simran
-                  <i class="fa fa-ellipsis-v right"></i>
-                  <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#"></a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">Simran <i class="material-icons right"></i></span>
-                <p><a href="#"></a></p>
-                <p>
-                  Hi, this is Simran and I work as an Assistant Manager in Digital Marketing( Business development and
-                  Client Servicing).
-                  I really love my work as I got to know about different brands and specially fashion brands. I am in a
-                  perfect environment where I can grow as a person and make my company grow too.
-                  I love to create fashion, Beauty and lifestyle content on social media.
-
                 </p>
               </div>
             </div>
@@ -650,14 +655,14 @@
                 <img class="activator" src="assets/img/index/Ajay.webp" alt="image" />
               </div>
               <div class="card-content">
-                <span class="card-title activator">Ajay
+                <span class="card-title activator sub-heading ">Ajay
                   <i class="fa fa-ellipsis-v right"></i>
                   <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#"></a></p>
+                <p><a href="#">Operations</a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title">Ajay <i class="material-icons right"></i></span>
-                <p><a href="#"></a></p>
+                <p><a href="#">Operations</a></p>
                 I just want three things to Learn:
                 Simplicity, patience & compassion.
 
@@ -672,6 +677,41 @@
               </div>
             </div>
           </div>
+
+          <div class="portfolio-item shuffle-item filtered" data-groups='["all", "branding"]' style="
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+                opacity: 1;
+                transition: transform 250ms ease-out 0s,
+                  opacity 250ms ease-out 0s;
+              ">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/index/Manjeet.webp" alt="image" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator sub-heading  ">Manjeet
+                  <i class="fa fa-ellipsis-v right"></i>
+                  <i class="fa fa-heart-o right"></i></span>
+                <p><a href="#">SEM Specialist</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title">Manjeet <i class="material-icons right"></i></span>
+                <p><a href="#">SEM Specialist</a></p>
+                <p>
+                  I am self-oriented and dedicated person towards my work who
+                  completely believes in hard working. As an Manager I do PPC
+                  (SEM) + Media Buying in digital marketing industry. I love
+                  to play cricket, football as my hobbies.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+          
           <div class="portfolio-item shuffle-item filtered" data-groups='["all", "websites",  "photography"]' style="
                 position: absolute;
                 top: 0px;
@@ -686,88 +726,22 @@
                 <img class="activator" src="assets/img/portfolio/portfolio-5.jpg" alt="image" />
               </div>
               <div class="card-content">
-                <span class="card-title activator">Team Member 5
+                <span class="card-title activator sub-heading ">Rashmi 
                   <i class="fa fa-ellipsis-v right"></i>
                   <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#">UI Design</a></p>
+                <p><a href="#">Sales</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title">Team Member 5 <i class="material-icons right"></i></span>
-                <p><a href="#">UI Design</a></p>
+                <span class="card-title">Rashmi  <i class="material-icons right"></i></span>
+                <p><a href="#">Sales</a></p>
                 <p>
-                  Authoritatively grow quality technologies for strategic
-                  sources. Dramatically evolve front-end services for
-                  functional e-markets. Credibly parallel task multifunctional
-                  methods.
+                
                 </p>
-                <a href="#" class="readmore">View full project</a>
               </div>
             </div>
           </div>
-          <div class="portfolio-item shuffle-item filtered" data-groups='["all", "marketing", "photography"]' style="
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                transform: translate3d(760px, 410px, 0px) scale3d(1, 1, 1);
-                opacity: 1;
-                transition: transform 250ms ease-out 0s,
-                  opacity 250ms ease-out 0s;
-              ">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/portfolio/portfolio-6.jpg" alt="image" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator">Team Member 6
-                  <i class="fa fa-ellipsis-v right"></i>
-                  <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#">Marketing</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">Team Member 6 <i class="material-icons right"></i></span>
-                <p><a href="#">Marketing</a></p>
-                <p>
-                  Authoritatively grow quality technologies for strategic
-                  sources. Dramatically evolve front-end services for
-                  functional e-markets. Credibly parallel task multifunctional
-                  methods.
-                </p>
-                <a href="#" class="readmore">View full project</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item shuffle-item filtered" data-groups='["all", "marketing", "photography"]' style="
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                transform: translate3d(760px, 410px, 0px) scale3d(1, 1, 1);
-                opacity: 1;
-                transition: transform 250ms ease-out 0s,
-                  opacity 250ms ease-out 0s;
-              ">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/portfolio/portfolio-6.jpg" alt="image" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator">Team Member 6
-                  <i class="fa fa-ellipsis-v right"></i>
-                  <i class="fa fa-heart-o right"></i></span>
-                <p><a href="#">Marketing</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">Team Member 6 <i class="material-icons right"></i></span>
-                <p><a href="#">Marketing</a></p>
-                <p>
-                  Authoritatively grow quality technologies for strategic
-                  sources. Dramatically evolve front-end services for
-                  functional e-markets. Credibly parallel task multifunctional
-                  methods.
-                </p>
-                <a href="#" class="readmore">View full project</a>
-              </div>
-            </div>
-          </div>
+          
+          
         </div>
       </div>
     </div>
@@ -828,7 +802,7 @@
         </div>
         <span class="copy-text">Copyright &copy; 2022 <a href="#">Aldebaranmedia</a> &nbsp; | &nbsp;
           All Rights Reserved &nbsp; | &nbsp; Designed By
-          <a href="https://www.xcitech.in/">Xcitech-technologies  </a></span>
+          <a href="https://www.xcitech.in/">Xcitech-technologies </a></span>
         <!-- /.row -->
       </div>
       <!-- /.container -->
@@ -866,10 +840,33 @@
   <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
   <script src="assets/js/scripts.js"></script>
 
   <script>
+
+
+$(document).ready(function () {
+      $(".what-we-do").slick({
+        speed: 2000,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		cssEase: 'linear',
+    slidesToShow: 1,
+  	slidesToScroll: 1,
+    arrows: false,
+        dots: false,
+    swipeToSlide: true,
+  	centerMode: false,
+    focusOnSelect: false,
+    pauseOnHover: false,
+
+      });
+    });
+
+
+
     $(document).ready(function () {
       $(".customer-logos").slick({
         slidesToShow: 6,
@@ -878,6 +875,7 @@
         autoplaySpeed: 1500,
         arrows: false,
         dots: false,
+        cssEase: 'linear',   
         pauseOnHover: false,
         responsive: [
           {
