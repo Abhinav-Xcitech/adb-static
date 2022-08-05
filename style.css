@@ -38,7 +38,7 @@
 
 
 /* Import css files */
-@import url("assets/fonts/flaticon/flaticon.css");
+@import url("./assets/fonts/flaticon/flaticon.css");
 @import url('http://fonts.cdnfonts.com/css/circular-std');
 
                 
@@ -1138,70 +1138,70 @@ thead {
 }
 
 .banner-1 {
-    background-image: url("assets/img/banner/banner-1.jpg");  
+    background-image: url("./assets/img/banner/banner-1.jpg");  
 }
 .banner-2 {
-    background-image: url("assets/img/banner/banner-2.jpg");  
+    background-image: url("./assets/img/banner/banner-2.jpg");  
 }
 .banner-3 {
-    background-image: url("assets/img/banner/banner-3.jpg");  
+    background-image: url("./assets/img/banner/banner-3.jpg");  
 }
 .banner-4 {
-    background-image: url("assets/img/banner/banner-4.jpg");  
+    background-image: url("./assets/img/banner/banner-4.jpg");  
 }
 .banner-5 {
-    background-image: url("assets/img/banner/banner-5.jpg");
+    background-image: url("./assets/img/banner/banner-5.jpg");
 }
 .banner-6 {
-    background-image: url("assets/img/banner/banner-6.jpg");  
+    background-image: url("./assets/img/banner/banner-6.jpg");  
 }
 .banner-7 {
-    background-image: url("assets/img/affiliate/main.webp");  
+    background-image: url("./assets/img/affiliate/main.webp");  
     min-height: 90vh;
     width: 100%;
     height: 100%;
 }
 .banner-8 {
-    background-image: url("assets/img/banner/banner-8.jpg");
+    background-image: url("./assets/img/banner/banner-8.jpg");
 }
 .banner-9 {
-    background-image: url("assets/img/banner/banner-9.jpg");  
+    background-image: url("./assets/img/banner/banner-9.jpg");  
 }
 .banner-10 {
-    background-image: url("assets/img/banner/banner-10.jpg");  
+    background-image: url("./assets/img/banner/banner-10.jpg");  
 }
 .banner-11 {
-    background-image: url("assets/img/banner/banner-11.jpg");  
+    background-image: url("./assets/img/banner/banner-11.jpg");  
 }
 .banner-12 {
-    background-image: url("assets/img/banner/banner-12.jpg");  
+    background-image: url("./assets/img/banner/banner-12.jpg");  
 }
 .banner-13 {
-    background-image: url("assets/img/banner/banner-13.jpg");  
+    background-image: url("./assets/img/banner/banner-13.jpg");  
 }
 .banner-14 {
-    background-image: url("assets/img/banner/banner-14.jpg"); 
+    background-image: url("./assets/img/banner/banner-14.jpg"); 
 }
 .banner-14.overlay::before  {
     background-color: rgba(246, 72, 63, 0.9);
 }
 .banner-15 {
-    background-image: url("assets/img/banner/banner-15.jpg");  
+    background-image: url("./assets/img/banner/banner-15.jpg");  
 }
 .banner-16 {
-    background-image: url("assets/img/banner/banner-16.jpg");  
+    background-image: url("./assets/img/banner/banner-16.jpg");  
 }
 .banner-17 {
-    background-image: url("assets/img/banner/banner-17.jpg");  
+    background-image: url("./assets/img/banner/banner-17.jpg");  
 }
 .banner-18 {
-    background-image: url("assets/img/banner/banner-18.jpg");  
+    background-image: url("./assets/img/banner/banner-18.jpg");  
 }
 .banner-19 {
-    background-image: url("assets/img/banner/banner-19.jpg");  
+    background-image: url("./assets/img/banner/banner-19.jpg");  
 }
 .banner-20 {
-    background-image: url("assets/img/banner/banner-20.jpg");  
+    background-image: url("./assets/img/banner/banner-20.jpg");  
 }
 
 @media screen and (max-width: 767px) {
@@ -1972,7 +1972,7 @@ KEY FRAME
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
-  background-image: url("assets/img/device-mockups/macbook.png");
+  background-image: url("./assets/img/device-mockups/macbook.png");
 }
 
 .device-mockup > .device > .screen {
@@ -2001,18 +2001,18 @@ KEY FRAME
 .device-mockup[data-device="ipad"] > .device,
 .device-mockup[data-device="ipad"][data-color="black"] > .device,
 .device-mockup[data-device="ipad"][data-orientation="portrait"][data-color="black"] > .device {
-  background-image: url("assets/img/device-mockups/ipad_port_black.png");
+  background-image: url("./assets/img/device-mockups/ipad_port_black.png");
 }
 .device-mockup[data-device="ipad"][data-color="white"] > .device,
 .device-mockup[data-device="ipad"][data-orientation="portrait"][data-color="white"] > .device {
-  background-image: url("assets/img/device-mockups/ipad_port_white.png");
+  background-image: url("./assets/img/device-mockups/ipad_port_white.png");
 }
 .device-mockup[data-device="ipad"][data-orientation='landscape'] > .device,
 .device-mockup[data-device="ipad"][data-orientation="landscape"][data-color="black"] > .device {
-  background-image: url("assets/img/device-mockups/ipad_land_black.png");
+  background-image: url("./assets/img/device-mockups/ipad_land_black.png");
 }
 .device-mockup[data-device="ipad"][data-orientation="landscape"][data-color="white"] > .device {
-  background-image: url("assets/img/device-mockups/ipad_land_white.png");
+  background-image: url("./assets/img/device-mockups/ipad_land_white.png");
 }
 .device-mockup[data-device="ipad"] > .device > .screen,
 .device-mockup[data-device="ipad"][data-orientation="portrait"] > .device > .screen {
