@@ -39,7 +39,7 @@
 
 /* Import css files */
 @import url("./assets/fonts/flaticon/flaticon.css");
-@import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
                 
 
@@ -52,11 +52,10 @@
 /* ================= General ==================== */
 
 body{
-    font-family: 'CircularStd', sans-serif !important;
-    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif !important;
+        font-size: 14px;
     line-height: 29px;
     font-weight: 500;
-    color: #999;
     background-color: #fff;
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
@@ -67,7 +66,7 @@ body{
 }
 
 html {
-    font-family: 'CircularStd', sans-serif !important;
+    font-family: 'Josefin Sans', sans-serif !important;
 }
 
 html,
@@ -112,9 +111,6 @@ a,
 /* ================ Typography ================== */
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', sans-serif!important;
-    font-weight: 400;
-    color: #202020;
     margin: 0 0 15px;
 }
 
@@ -230,32 +226,47 @@ button:focus {
 
 
 .section-main-heading{
-    font-size: 35px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 35px !important;
+    font-weight: 700 !important;
+    text-align: center ;
+    color: #25262A !important;
 
 }
 
 .section-heading-disc{
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    color: #bbbdc6
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    text-align: center ;
+    color: #25262A !important;
 }
 
 .sub-heading{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #000000 ;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1.2  !important;
+    color: #616060 !important ;
 }
 
 .sub-heading-para{
-    font-size: 16px;
-    color: #818697;
-    font-weight: 400;
+    font-size: 18px !important;
+    color: #25262A !important;
+    font-weight: 400 !important;
+}
+
+.sub-heading-white{
+    color: #ffffff !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1.2  !important;
+}
+
+
+
+.sub-heading-para-white{
+    font-size: 18px !important;
+    color: #ffffff !important;
+    font-weight: 400 !important;
 }
 
 
@@ -1156,10 +1167,11 @@ thead {
     background-image: url("../img/banner/banner-6.jpg");  
 }
 .banner-7 {
-    background-image: url("../img/affiliate/main.webp");  
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/affiliate/main.webp');
     min-height: 90vh;
     width: 100%;
     height: 100%;
+    background-position: center top;
 }
 .banner-8 {
     background-image: url("../img/banner/banner-8.jpg");
