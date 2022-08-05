@@ -52,10 +52,10 @@ header .carousel-inner .item img {
 .header-subheading {
   text-transform: capitalize;
   display: block;
-  font-size: 16px;
-  font-weight: 400;
   text-align: center;
-  color: #bbbdc6;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #25262A !important;
 }
 
 .details-section {
@@ -130,18 +130,16 @@ header .carousel-inner .item img {
 }
 
 .slider-sub-title {
-  font-size: 20px;
-  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   color: #ffffff;
   letter-spacing: 3px;
+  font-size: 18px !important;
+  font-weight: 400 !important;
 }
 
 .slider-title {
-  font-size: 35px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -149,6 +147,9 @@ header .carousel-inner .item img {
   padding: 50px 0px;
   opacity: 1;
   letter-spacing: 7.2px;
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-size: 35px !important;
+  font-weight: 700 !important;
 }
 
 .slider-buttton {
@@ -218,10 +219,9 @@ header .carousel-inner .item img {
 }
 
 .details-section .text-content .content span {
-  font-size: 16px;
-  color: #818697;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 18px !important;
+  color: #25262A !important;
+  font-weight: 400 !important;
 }
 
 .details-section .img-content {
@@ -283,10 +283,9 @@ header .carousel-inner .item img {
 }
 
 .details-section-second .text-content .content span {
-  font-size: 16px;
-  color: #818697;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 18px !important;
+  color: #25262A !important;
+  font-weight: 400 !important;
 }
 
 .details-section-second .img-content {
@@ -299,12 +298,13 @@ header .carousel-inner .item img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  vertical-align: center;
 }
 
 .details-section-second .img-content .img img {
   width: 100%;
   height: 100%;
-  max-height: 800px;
+  max-height: 900px;
   border-radius: 10px;
 }
 
@@ -345,15 +345,15 @@ header .carousel-inner .item img {
   text-align: center;
   margin: 20px 0px;
   font-size: 20px !important;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #000000;
+  font-weight: 500 !important;
+  line-height: 1.2  !important;
+  color: #616060 !important;
 }
 
 .benefits-of-joining-us .card .description p {
-  font-size: 16px;
-  color: #818697;
-  font-weight: 400;
+  font-size: 18px !important;
+  color: #25262A !important;
+  font-weight: 400 !important;
   text-align: center;
 }
 
@@ -454,7 +454,7 @@ header .carousel-inner .item img {
 }
 
 .types-of-publisher .card {
-  min-height: 300px;
+  min-height: 340px;
 }
 
 .blog-and-editorials {
@@ -608,14 +608,15 @@ header .carousel-inner .item img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  color: #000000;
+  color: #616060 !important;
+  margin-bottom: 15px;
 }
 
 .advertisers-view .text-content .list-body {
   display: block;
-  font-size: 16px;
-  color: #818697;
-  font-weight: 400;
+  font-size: 18px !important;
+  color: #25262A !important;
+  font-weight: 400 !important;
 }
 
 .advertisers-view .img {
