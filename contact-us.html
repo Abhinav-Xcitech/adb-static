@@ -146,11 +146,7 @@
       <div class="container">
         <div class="text-center mb-80">
           <h2 class="section-title text-uppercase">Drop us a line</h2>
-          <p class="section-sub">
-            Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed
-            ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at
-            vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.
-          </p>
+
         </div>
 
         <div class="row">
@@ -196,16 +192,21 @@
                   </div>
                 </div>
                 <!-- /.col-md-6 -->
-
                 <div class="col-md-6">
                   <div class="input-field">
-                    <input
-                      id="Subject"
-                      type="text"
-                      name="Subject"
-                      class="validate"
-                    />
-                    <label for="Subject">Subject</label>
+                    <label for="" id="select-label" class="select-label">Who are you ?</label>
+
+                    <select
+                      name="Who_are_you "
+                      id="Who_are_you"
+                      class="form-select contactus-select "
+                      aria-label="Default select example"
+                     
+                    >
+                      <option value="" selected disabled ></option>
+                      <option value="Advertiser">I am an Advertiser</option>
+                      <option value="Publisher">I am an Publisher</option>
+                    </select>
                   </div>
                 </div>
 
@@ -213,18 +214,18 @@
               </div>
               <!-- /.row -->
               <div class="row">
-                <div class="col-md-6">
-                  <div class="input-field">
-                    <label for="" class="active">Who are you ?</label>
+              
 
-                    <select
-                      name="Who_are_you "
-                      class="form-select contactus-select validate"
-                      aria-label="Default select example"
-                    >
-                      <option value="Advertiser">I am an Advertiser</option>
-                      <option value="Publisher">I am an Publisher</option>
-                    </select>
+                
+                <div class="col-md-12">
+                  <div class="input-field"   >
+                    <input
+                      id="Subject"
+                      type="text"
+                      name="Subject"
+                      class="validate"
+                    />
+                    <label for="Subject">Subject</label>
                   </div>
                 </div>
 
@@ -252,11 +253,11 @@
           </div>
           <!-- /.col-md-8 -->
 
-          <div class="col-md-4 contact-info">
+          <div class="col-md-4 contact-info sub-heading-para">
             <address>
               <i class="material-icons brand-color">&#xE55F;</i>
               <div class="address">
-                Plot No. 344, Third Floor, Near DDA Park,<br />
+                Plot No. 344, Third Floor, Near DDA Park,
                 Sector 19, Dwarka, New Delhi,
 
                 <p>Delhi 110075<br /></p>
@@ -270,10 +271,10 @@
               <i class="material-icons brand-color">&#xE0E1;</i>
               <div class="mail">
                 <p>
-                  <a href="mailto:contact@aldebaranmedia.com"
+                  <a class="sub-heading-para" href="mailto:contact@aldebaranmedia.com"
                     >contact@aldebaranmedia.com</a
                   ><br />
-                  <a href="https://www.aldebaranmedia.com/"
+                  <a class="sub-heading-para" href="https://www.aldebaranmedia.com/"
                     >www.aldebaranmedia.com</a
                   >
                 </p>
@@ -287,40 +288,53 @@
     </section>
     <!-- contact-form-section End -->
 
-    <!-- map-section -->
-    <div id="myMap" class="height-350"></div>
-    <!-- /.map-section -->
 
     <footer class="footer footer-four">
       <div class="primary-footer brand-bg text-center">
         <div class="container">
-          <a href="#top" class="page-scroll btn-floating btn-large back-top waves-effect waves-light" data-section="#top">
+          <a
+            href="#top"
+            class="page-scroll btn-floating btn-large back-top waves-effect waves-light"
+            data-section="#top"
+          >
             <i class="material-icons" style="color: red">&#xE316;</i>
           </a>
-  
+
           <ul class="social-link tt-animate ltr mt-20">
             <li>
-              <a href="https://www.facebook.com/aldebaranmediaofficial/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/aldebaranmediaofficial/"
+                ><i class="fa fa-facebook"></i
+              ></a>
             </li>
-  
+
             <li>
-              <a href="https://www.linkedin.com/company/70959489"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/70959489"
+                ><i class="fa fa-linkedin"></i
+              ></a>
             </li>
-  
+
             <li>
-              <a href="https://www.instagram.com/aldebaranmedia/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.instagram.com/aldebaranmedia/"
+                ><i class="fa fa-instagram"></i
+              ></a>
             </li>
-  
           </ul>
-  
-          <div class="row" style="display: flex; justify-content: space-between ;flex-wrap:wrap;">
+
+          <div
+            class="row"
+            style="
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+            "
+          >
             <div class="col-md-5">
               <div class="footer-logo">
                 <img src="assets/img/logo.png" alt="" />
               </div>
-  
+
               <div class="footer-intro text-white">
-                <p>
+                <p class="sub-heading-para-white">
                   Email: contact [ @ ] aldebaranmedia.com
                   <br />
                   Address:
@@ -337,15 +351,22 @@
                 <aside id="block-3" class="widget widget_block">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2024.030582648992!2d77.04671936972103!3d28.577412893380078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bb7d5337869%3A0x9e7fc22504c6d3e5!2sAldebaran%20Media%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1642353171794!5m2!1sen!2sin"
-                    height="300px" width="100%" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy">
+                    height="300px"
+                    width="100%"
+                    style="border: 0; border-radius: 5px"
+                    allowfullscreen=""
+                    loading="lazy"
+                  >
                   </iframe>
                 </aside>
               </div>
             </div>
           </div>
-          <span class="copy-text">Copyright &copy; 2022 <a href="#">Aldebaranmedia</a> &nbsp; | &nbsp;
-            All Rights Reserved &nbsp; | &nbsp; Designed By
-            <a href="https://www.xcitech.in/">Xcitech-technologies  </a></span>
+          <span class="copy-text sub-heading-para-white"
+            >Copyright &copy; 2022 <a href="#">Aldebaranmedia</a> &nbsp; |
+            &nbsp; All Rights Reserved &nbsp; | &nbsp; Designed By
+            <a href="https://www.xcitech.in/">Xcitech-Technologies </a></span
+          >
           <!-- /.row -->
         </div>
         <!-- /.container -->
@@ -372,19 +393,46 @@
     <script src="assets/js/bootstrap-tabcollapse.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/jquery.sticky.min.js"></script>
-    <script src="assets/js/smoothscroll.min.js"></script>
+
     <script src="assets/js/jquery.stellar.min.js"></script>
     <script src="assets/js/jquery.inview.min.js"></script>
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+ 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/scripts.js"></script>
 
     <!-- Google Map Customization  -->
     <script type="text/javascript">
+
+let Who_are_you = document.getElementById("Who_are_you");
+Who_are_you.addEventListener("focus", (e) => {
+  let label = document.getElementById("select-label");
+  label.classList.add("active");
+ 
+});
+Who_are_you.addEventListener("blur", (e) => {
+  if(e.target.value){
+    e.target.classList.add("valid");
+  }else{
+    e.target.classList.remove("valid");
+    let label = document.getElementById("select-label");
+  label.classList.remove("active");
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
       $("#gform").submit((e) => {
         e.preventDefault();
         Swal.fire({
@@ -410,72 +458,9 @@
         });
       });
 
-      jQuery(document).ready(function () {
-        //set your google maps parameters
-        var $latitude = 40.716304, //Visit http://www.latlong.net/convert-address-to-lat-long.html for generate your Lat. Long.
-          $longitude = -73.995763,
-          $map_zoom = 16; /* ZOOM SETTING */
+      
 
-        //google map custom marker icon
-        var $marker_url = "assets/img/pin.png";
-
-        //we define here the style of the map
-        var style = [
-          {
-            stylers: [
-              {
-                hue: "#03a9f4",
-              },
-              {
-                saturation: 10,
-              },
-              {
-                gamma: 2.15,
-              },
-              {
-                lightness: 12,
-              },
-            ],
-          },
-        ];
-
-        //set google map options
-        var map_options = {
-          center: new google.maps.LatLng($latitude, $longitude),
-          zoom: $map_zoom,
-          panControl: true,
-          zoomControl: true,
-          mapTypeControl: true,
-          streetViewControl: true,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false,
-          styles: style,
-        };
-        //inizialize the map
-        var map = new google.maps.Map(
-          document.getElementById("myMap"),
-          map_options
-        );
-        //add a custom marker to the map
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng($latitude, $longitude),
-          map: map,
-          visible: true,
-          icon: $marker_url,
-        });
-
-        var contentString =
-          '<div id="mapcontent">' +
-          "<p>materialize, 1355 Market Street, San Francisco.</p></div>";
-        var infowindow = new google.maps.InfoWindow({
-          maxWidth: 320,
-          content: contentString,
-        });
-
-        google.maps.event.addListener(marker, "click", function () {
-          infowindow.open(map, marker);
-        });
-      });
+      
     </script>
   </body>
 </html>

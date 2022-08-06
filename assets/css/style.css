@@ -323,9 +323,7 @@ thead {
 .contact-info .mail{
     overflow: hidden;
 }
-.contact-info .mail a {
-    color: #999;
-}
+
 .contact-info .mail a:hover {
     color: #03a9f4;
 }
