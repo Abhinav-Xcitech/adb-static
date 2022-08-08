@@ -7,15 +7,17 @@ Primary style
 }
 
 .tt-headline {
-  font-size: 3rem;
   line-height: 1.2;
   color: #fff;
+  font-size: 35px;
+  font-weight: 600 ;
+
 }
-@media only screen and (min-width: 768px) {
-  .tt-headline {
-    font-size: 4.4rem;
-    font-weight: 600;
-  }
+.tt-desc, {
+  line-height: 1.2;
+  color: #fff;
+  font-size: 18px !important;
+  font-weight: 400 !important;
 }
 
 
@@ -53,6 +55,29 @@ Primary style
   opacity: 0;
 }
 .no-js .tt-words-wrapper b.is-visible {
+  opacity: 1;
+}
+.disc-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.disc-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: wrap;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-weight: 400;
+}
+.disc-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .disc-words-wrapper b {
+  opacity: 0;
+}
+.no-js .disc-words-wrapper b.is-visible {
   opacity: 1;
 }
 

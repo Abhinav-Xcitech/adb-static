@@ -119,8 +119,7 @@ header .carousel-inner .item img {
   line-height: normal;
   color: #ffffff;
   letter-spacing: 3px;
-  font-size: 18px !important;
-  font-weight: 400 !important;
+ 
 }
 
 .slider-title {
@@ -132,9 +131,8 @@ header .carousel-inner .item img {
   opacity: 1;
   letter-spacing: 7.2px;
 
-  font-family: 'Josefin Sans', sans-serif !important;
-    font-size: 35px !important;
-    font-weight: 700 !important;
+  font-family: 'Circular Std', sans-serif !important;
+   
 }
 
 .slider-buttton {
@@ -187,7 +185,6 @@ header .carousel-inner .item img {
 .details-section {
   min-height: 100%;
   padding: 50px;
-  margin-top: 30px;
   align-items: flex-start;
   .text-content {
     height: 100%;
@@ -206,8 +203,8 @@ header .carousel-inner .item img {
     .content{
       span{
         font-size: 18px !important;
-        color: #25262A !important;
-        font-weight: 400 !important;
+    color: #616060 !important;
+    font-weight: 300 !important;
       }
     }
 
@@ -259,8 +256,8 @@ header .carousel-inner .item img {
     .content{
       span{
         font-size: 18px !important;
-        color: #25262A !important;
-        font-weight: 400 !important;
+    color: #616060 !important;
+    font-weight: 300 !important;
       }
     }
 
@@ -319,16 +316,16 @@ header .carousel-inner .item img {
       text-align: center;
       margin: 20px 0px;
       font-size: 20px !important;
-    font-weight: 500 !important;
-    line-height: 1.2  !important;
-    color: #616060 !important ;
+      font-weight: 600 !important;
+      line-height: 1.2  !important;
+      color: #616060 !important ;
     }
 
     .description {
       p {
         font-size: 18px !important;
-        color: #25262A !important;
-        font-weight: 400 !important;
+    color: #616060 !important;
+    font-weight: 300 !important;
         text-align: center;
       }
     }
@@ -424,7 +421,7 @@ header .carousel-inner .item img {
 
 .types-of-publisher {
   .card {
-    min-height: 340px;
+    min-height: 310px;
   }
 }
 

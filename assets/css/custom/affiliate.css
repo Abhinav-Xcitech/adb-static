@@ -135,8 +135,6 @@ header .carousel-inner .item img {
   line-height: normal;
   color: #ffffff;
   letter-spacing: 3px;
-  font-size: 18px !important;
-  font-weight: 400 !important;
 }
 
 .slider-title {
@@ -147,9 +145,7 @@ header .carousel-inner .item img {
   padding: 50px 0px;
   opacity: 1;
   letter-spacing: 7.2px;
-  font-family: 'Josefin Sans', sans-serif !important;
-  font-size: 35px !important;
-  font-weight: 700 !important;
+  font-family: 'Circular Std', sans-serif !important;
 }
 
 .slider-buttton {
@@ -194,7 +190,6 @@ header .carousel-inner .item img {
 .details-section {
   min-height: 100%;
   padding: 50px;
-  margin-top: 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -220,8 +215,8 @@ header .carousel-inner .item img {
 
 .details-section .text-content .content span {
   font-size: 18px !important;
-  color: #25262A !important;
-  font-weight: 400 !important;
+  color: #616060 !important;
+  font-weight: 300 !important;
 }
 
 .details-section .img-content {
@@ -284,8 +279,8 @@ header .carousel-inner .item img {
 
 .details-section-second .text-content .content span {
   font-size: 18px !important;
-  color: #25262A !important;
-  font-weight: 400 !important;
+  color: #616060 !important;
+  font-weight: 300 !important;
 }
 
 .details-section-second .img-content {
@@ -345,15 +340,15 @@ header .carousel-inner .item img {
   text-align: center;
   margin: 20px 0px;
   font-size: 20px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   line-height: 1.2  !important;
   color: #616060 !important;
 }
 
 .benefits-of-joining-us .card .description p {
   font-size: 18px !important;
-  color: #25262A !important;
-  font-weight: 400 !important;
+  color: #616060 !important;
+  font-weight: 300 !important;
   text-align: center;
 }
 
@@ -451,7 +446,7 @@ header .carousel-inner .item img {
 }
 
 .types-of-publisher .card {
-  min-height: 340px;
+  min-height: 310px;
 }
 
 .blog-and-editorials {

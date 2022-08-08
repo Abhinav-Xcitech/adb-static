@@ -39,7 +39,8 @@
 
 /* Import css files */
 @import url("./assets/fonts/flaticon/flaticon.css");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('http://fonts.cdnfonts.com/css/circular-std');
 
                 
 
@@ -52,8 +53,9 @@
 /* ================= General ==================== */
 
 body{
-    font-family: 'Josefin Sans', sans-serif !important;
-        font-size: 14px;
+    /* font-family: 'Josefin Sans', sans-serif !important; */
+    font-family: 'Circular Std', sans-serif !important;
+    font-size: 14px;
     line-height: 29px;
     font-weight: 500;
     background-color: #fff;
@@ -66,7 +68,7 @@ body{
 }
 
 html {
-    font-family: 'Josefin Sans', sans-serif !important;
+    font-family: 'Circular Std', sans-serif !important;
 }
 
 html,
@@ -243,27 +245,38 @@ button:focus {
 
 .sub-heading{
     font-size: 20px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     line-height: 1.2  !important;
     color: #616060 !important ;
 }
 
 .sub-heading-para{
     font-size: 18px !important;
-    color: #25262A !important;
-    font-weight: 400 !important;
+    color: #616060 !important;
+    font-weight: 300 !important;
 }
 
 .sub-heading-white{
     color: #ffffff !important;
     font-size: 20px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     line-height: 1.2  !important;
 }
 
-
-
 .sub-heading-para-white{
+    font-size: 18px !important;
+    color: #ffffff !important;
+    font-weight: 300 !important;
+}
+
+.banner-heading{
+    color: #ffffff !important;
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    line-height: 1.2  !important;
+}
+
+.banner-para{
     font-size: 18px !important;
     color: #ffffff !important;
     font-weight: 400 !important;
@@ -950,13 +963,13 @@ thead {
 .sub-intro {
     display: block;
     margin: 0 auto 30px;
-    font-weight: bold;
+    
 }
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .sub-intro {
         width: 60%;
     }
-}
+} */
 
 
 .section-title {
