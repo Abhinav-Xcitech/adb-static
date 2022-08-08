@@ -110,12 +110,12 @@
               <li class="">
                 <a href="affiliate.html">Affiliate Marketing</a>
               </li>
-              <li class="active">
+              <li class="">
                 <a href="javascript:void(0)">Get Involved</a>
                 <ul class="dropdown">
                   <li><a href="advertisers.html">As an Advertiser </a></li>
                   <li><a href="publisher.html">As a Publisher</a></li>
-                  <li class="active">
+                  <li class="">
                     <a href="Influencer.html">As an Influencer</a>
                   </li>
                 </ul>
@@ -125,7 +125,7 @@
                   >Partner login</a
                 >
               </li>
-              <li class=""><a href="careers.html"> Careers</a></li>
+              <li class="active"><a href="careers.html"> Careers</a></li>
 
               <li class=""><a href="contact-us.html">Contact Us</a></li>
             </ul>
@@ -144,7 +144,7 @@
           </div>
 
           <div class="btn-container">
-            <a href="contact-us.html" class="btn btn-primary">Join us</a>
+            <a href="#apply" class="btn btn-primary">Apply Now</a>
           </div>
         </div>
       </div>
@@ -153,12 +153,12 @@
     <section class="section-padding">
       <div class="container">
         <div class="text-center mb-80">
-          <h2 class="section-title text-uppercase">Apply Here</h2>
+          <h2 class="section-title text-uppercase" id="apply">Apply Here</h2>
         </div>
 
         <div class="row">
           <div class="col-md-12">
-            <form name="contact-form" id="gform" action="">
+            <form name="contact-form" id="career_form" class="career_form" method="post" action="contact/mail.php">
               <div class="row">
                 <div class="col-md-6">
                   <div class="input-field">
@@ -392,6 +392,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="contact/mail.js"></script>
     <script src="assets/js/scripts.js"></script>
 
     <script>
@@ -510,31 +511,6 @@
           let label = document.getElementById("select-label");
           label.classList.remove("active");
         }
-      });
-
-      $("#gform").submit((e) => {
-        e.preventDefault();
-        Swal.fire({
-          text: "Form submitted successfully",
-          target: "#custom-target",
-          customClass: {
-            container: "position-absolute",
-          },
-          toast: true,
-          position: "top-right",
-        });
-        $.ajax({
-          url: "https://script.google.com/macros/s/AKfycby_WGVJQNGLFp8HZ31kg7n2NIZFGLfBf4MZmMKDxVwHHOOhBoQa4MhsjaibbphgPce9gQ/exec",
-          data: $("#gform").serialize(),
-          method: "post",
-          success: function (response) {
-            window.location.reload();
-            //window.location.href="https://google.com"
-          },
-          error: function (err) {
-            alert("Something Error");
-          },
-        });
       });
 
       
