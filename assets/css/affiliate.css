@@ -1,0 +1,281 @@
+
+  header .carousel-inner .item{
+    height: 100vh;
+  }
+  header .carousel-inner .item img{
+    width: 100%;
+  }
+  .carousel-caption{
+    padding-bottom: 150px;
+  }
+  .carousel-caption h2{
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .carousel-control.right{
+    background-image: none;
+  }
+  .carousel-control.left{
+    background-image: none;
+  }
+  
+  
+  
+  
+  /* ignore the code below */
+  
+  
+  .link-area
+  {
+    position:fixed;
+    bottom:20px;
+    left:20px;  
+    padding:15px;
+    border-radius:40px;
+    background:tomato;
+  }
+  .link-area a
+  {
+    text-decoration:none;
+    color:#fff;
+    font-size:25px;
+  }
+
+.header-text{
+  font-size: 26px !important; 
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+  color: #000000 !important;
+}
+
+.header-subheading{
+  font-size: 18px;
+  text-transform: capitalize;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1024px;
+
+}
+
+
+
+
+.text-content .detailes{
+  font-size: 18px;
+  display: block;
+  margin: 20px 0;
+}
+
+.img-content .img{
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-content .img img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+.slide-1 {
+  background: url("../img/affiliate/Connect.webp");
+  background-size: cover;
+}
+
+.slide-2 {
+  background: url("../img/affiliate/Promote.webp");
+  background-size: cover;
+}
+
+.slide-3 {
+  background: url("../img/affiliate/paid.webp");
+  background-size: cover;
+}
+
+
+.slider-buttton {
+  display: inline-block;
+}
+
+.swiper-slide-active .slider-sub-title {
+  animation: rollIn 1s;
+}
+
+.swiper-slide-active .slider-title {
+  animation: fadeInUp 1.5s;
+}
+.swiper-slide-active.slide-2 .slider-title {
+  animation: fadeInRight 1.5s;
+}
+.swiper-slide-active.slide-3 .slider-title {
+  animation: fadeInLeft 1.5s;
+}
+
+
+.swiper-slide-active .slider-buttton {
+  animation: zoomIn 2s;
+}
+
+
+/* Publisher Page */
+
+.banner{
+  background-image: url("../img/affiliate/paid.webp"), url("../img/banner/wave.svg");
+  background-size: cover,contain;
+  background-position:  center center,center bottom;
+  height: 100vh ;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.banner .container{
+  height: 100%;
+}
+
+.banner .banner-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .banner-content .sub-title-text {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 30px 0;
+  max-width: 700px;
+
+}
+
+.banner .banner-content .title-text {
+  font-size: 20px !important;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color:#ffffff;
+  padding: 30px 0px;
+  opacity: 1;
+  letter-spacing: 5.2px;
+  max-width: 700px;
+
+}
+
+
+.banner .banner-content .slider-buttton {
+  font-weight: 600;
+  letter-spacing: 1.29px;
+  border: solid 1px #ffffff;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+
+.blog-and-editorials{
+  background: url("../img/affiliate/Advertiser.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.online-communities{
+  background: url("../img/affiliate/Affiliate\ Home\ page.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-sites{
+  background: url("../img/affiliate/Promote.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mobile-apps{
+  background: url("../img/affiliate/Advertiser.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.content-networks{
+  background: url("../img/affiliate/paid.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.commercial-platforms{
+  background: url("../img/affiliate/Publisher.webp");
+  background-size: cover;
+  /* background-position:  50% 50%; */
+  height: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/* Publisher Page */
+
+@media only screen and (min-width: 768px) {
+
+  .banner{
+    height: 70vh;
+  }
+  .banner .banner-content .sub-title-text {
+    font-size: 20px;
+  }
+  .banner .banner-content .title-text {
+    font-size: 35px;
+  }
+  .banner .banner-content .slider-buttton {
+    font-size: 30px;
+  }
+}
+  
+
