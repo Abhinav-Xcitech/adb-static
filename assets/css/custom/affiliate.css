@@ -129,22 +129,12 @@ header .carousel-inner .item img {
   /* padding: 100px; */
 }
 
-.slider-sub-title {
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  color: #ffffff;
-  letter-spacing: 3px;
-}
-
 .slider-title {
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
   color: #ffffff;
   padding: 50px 0px;
   opacity: 1;
-  letter-spacing: 7.2px;
+  font-size: 18px;
+  font-weight: 400;
   font-family: 'Circular Std', sans-serif !important;
 }
 
@@ -429,10 +419,9 @@ header .carousel-inner .item img {
   color: #ffffff;
   padding: 30px 0px;
   opacity: 1;
-  letter-spacing: 5.2px;
   max-width: 700px;
-  font-size: 18px !important;
-  font-weight: 400 !important;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .banner .banner-content .slider-buttton {

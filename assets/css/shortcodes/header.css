@@ -182,11 +182,11 @@ Header
 }
 
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
     .semi-transparent{
         background:#d30023 !important;
     } 
-}
+} */
 
 .tt-nav .brand-header,
 .tt-nav.sticky .brand-header {
