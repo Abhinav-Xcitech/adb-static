@@ -1,15 +1,13 @@
 <?php
 
 
-            $to = "prashant@xcitech.in";
+            $to = "abhinav.k@xcitech.in";
             
             $subject = "Got Request From Website";
-            $input = $_REQUEST;
-            echo json_encode($input);
-            exit();
+            $input = $_POST;
          
             
-            $message = "<b>Hello, System User.</b><br> Got Request from website for you... ";
+            $message = "<b>Hello, Admin.</b><br> Got Request from website for you... ";
             $message .= "<h1>This are the Details.</h1>";
             
             ptint_r($input);
@@ -21,7 +19,7 @@
             
             
             $message .= "<br><br><strong>Thank You</strong>";
-            $header = "From:no-reply@aldebaranmedia.com \r\n";
+            $header = "From:admin@aldebaranmedia.com \r\n";
             $header .= "MIME-Version: 1.0\r\n";
             $header .= "Content-type: text/html\r\n";
             

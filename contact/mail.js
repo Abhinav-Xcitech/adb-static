@@ -2,7 +2,6 @@
   "use strict";
 
   let forms = document.querySelectorAll(".career_form");
-  console.log(forms);
 
   forms.forEach(function (e) {
     e.addEventListener("submit", function (event) {
@@ -28,17 +27,17 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-      console.log('-------------------------------')
-      console.log(formData);
     $.ajax({
       url: action,
       type: "POST",
       data: formData,
-    //   dataType: "json",
+      dataType: "json",
       cache: false,
-    //   contentType: "application/json; charset=utf-8",
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
       processData: false,
       success: function (data) {
+        alert("success");
         thisForm.querySelector(".loading").classList.remove("d-block");
         if (data.trim() == "OK") {
           thisForm.querySelector(".sent-message").classList.add("d-block");
