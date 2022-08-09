@@ -275,15 +275,12 @@ button:focus {
     font-weight: 600 !important;
     line-height: 1.2  !important;
 }
-<<<<<<< HEAD
-=======
 .banner-main-heading{
     color: #ffffff !important;
     font-size: 45px !important;
     font-weight: 600 !important;
     line-height: 1.2  !important;
 }
->>>>>>> origin/production
 
 .banner-para{
     font-size: 18px !important;
@@ -291,8 +288,6 @@ button:focus {
     font-weight: 400 !important;
 }
 
-<<<<<<< HEAD
-=======
 @media only screen and (max-width: 767px) {
     .banner-para{
         margin-top: 60px;
@@ -300,7 +295,6 @@ button:focus {
     
 }
 
->>>>>>> origin/production
 
 
 
