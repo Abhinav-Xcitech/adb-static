@@ -2,7 +2,6 @@
   "use strict";
 
   let forms = document.querySelectorAll(".career_form");
-  console.log(forms);
 
   forms.forEach(function (e) {
     e.addEventListener("submit", function (event) {
@@ -12,7 +11,6 @@
 
       let action = thisForm.getAttribute("action");
 
-      alert(action);
 
       if (!action) {
         displayError(thisForm, "The form action property is not set!");
