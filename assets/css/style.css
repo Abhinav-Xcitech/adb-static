@@ -158,6 +158,7 @@ hr {
     border-radius: 25px;
     background-color: #03a9f4; /*brand primary color*/
     border: 0;
+    color: #fff;
 }
 
 .btn-lg {
