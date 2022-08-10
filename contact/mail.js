@@ -6,7 +6,7 @@
   forms.forEach(function (e) {
     e.addEventListener("submit", function (event) {
       event.preventDefault();
-      alert("submit");
+      
       let thisForm = this;
 
       let action = thisForm.getAttribute("action");
