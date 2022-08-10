@@ -55,9 +55,16 @@ body {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-  max-height: 200px;
+  max-height: 100px;
 }
 
+@media only  screen and (min-width: 425px) {
+  .slick-slider {
+    
+    max-height: 200px;
+  }
+}
+  
 
 .what-we-do{
   min-height: 106vh;
@@ -154,67 +161,66 @@ body {
   display: none;
 }
 
-.border {
-  height: 280px;
-  max-height: 280px;
+.service-border {
+  max-height: 360px;
   padding: 20px;
 }
 
-.border:nth-child(1) {
+.service-border:nth-child(1) {
   border-bottom: 0.5px solid #ccc;
 }
-.border:nth-child(2) {
+.service-border:nth-child(2) {
   border-bottom: 0.5px solid #ccc;
 }
-.border:nth-child(3) {
+.service-border:nth-child(3) {
   border-bottom: 0.5px solid #ccc;
 }
-.border:nth-child(4) {
+.service-border:nth-child(4) {
   border-bottom: 0.5px solid #ccc;
 }
-.border:nth-child(5) {
+.service-border:nth-child(5) {
   border-bottom: 0.5px solid #ccc;
 }
 
 @media only screen and (min-width: 768px) {
-  .border:nth-child(1) {
+  .service-border:nth-child(1) {
     border-bottom: 0.5px solid #ccc;
     border-right: 0.5px solid #ccc;
   }
-  .border:nth-child(2) {
+  .service-border:nth-child(2) {
     border-bottom: 0.5px solid #ccc;
   }
-  .border:nth-child(3) {
+  .service-border:nth-child(3) {
     border-bottom: 0.5px solid #ccc;
     border-right: 0.5px solid #ccc;
   }
-  .border:nth-child(4) {
+  .service-border:nth-child(4) {
     border-bottom: 0.5px solid #ccc;
   }
-  .border:nth-child(5) {
+  .service-border:nth-child(5) {
     border-bottom: none;
     border-right: 0.5px solid #ccc;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .border:nth-child(1) {
+  .service-border:nth-child(1) {
     border-bottom: 0.5px solid #ccc;
     border-right: 0.5px solid #ccc;
   }
-  .border:nth-child(2) {
+  .service-border:nth-child(2) {
     border-right: 0.5px solid #ccc;
     border-bottom: 0.5px solid #ccc;
   }
-  .border:nth-child(3) {
+  .service-border:nth-child(3) {
     border-bottom: 0.5px solid #ccc;
     border-right: none;
   }
-  .border:nth-child(4) {
+  .service-border:nth-child(4) {
     border-right: 0.5px solid #ccc;
     border-bottom: none;
   }
-  .border:nth-child(5) {
+  .service-border:nth-child(5) {
     border-bottom: none;
     border-right: 0.5px solid #ccc;
   }
@@ -231,7 +237,7 @@ body {
   object-fit: contain;
 }
 
-.featured .border:hover .icon img {
+.featured .service-border:hover .icon img {
   transform: scale(1.1);
 }
 

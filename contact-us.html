@@ -14,7 +14,7 @@
     />
     <meta name="author" content="trendytheme.net" />
 
-    <title>Contact Us - ADB</title>
+    <title>Al de baran digital Media-Contact Us </title>
 
     <!--  favicon -->
     <link rel="shortcut icon" href="assets/img/ico/favicon.png" />
@@ -137,7 +137,7 @@
             Advertisers get the most out of their traffic and budget across all
             digital media, channels and markets
           </div>
-  
+
           <div class="btn-container mb-40">
             <a href="#gform" class="btn btn-primary">Connect us</a>
           </div>
@@ -151,7 +151,6 @@
       <div class="container">
         <div class="text-center mb-80">
           <h2 class="section-title text-uppercase">Drop us a line</h2>
-
         </div>
 
         <div class="row">
@@ -199,16 +198,17 @@
                 <!-- /.col-md-6 -->
                 <div class="col-md-6">
                   <div class="input-field">
-                    <label for="" id="select-label" class="select-label">Who are you ?</label>
+                    <label for="" id="select-label" class="select-label"
+                      >Who are you ?</label
+                    >
 
                     <select
                       name="Who_are_you "
                       id="Who_are_you"
-                      class="form-select contactus-select "
+                      class="form-select contactus-select"
                       aria-label="Default select example"
-                     
                     >
-                      <option value="" selected disabled ></option>
+                      <option value="" selected disabled></option>
                       <option value="Advertiser">I am an Advertiser</option>
                       <option value="Publisher">I am a Publisher</option>
                       <option value="Publisher">I am an Influencer</option>
@@ -220,11 +220,8 @@
               </div>
               <!-- /.row -->
               <div class="row">
-              
-
-                
                 <div class="col-md-12">
-                  <div class="input-field"   >
+                  <div class="input-field">
                     <input
                       id="Subject"
                       type="text"
@@ -263,8 +260,8 @@
             <address>
               <i class="material-icons brand-color">&#xE55F;</i>
               <div class="address">
-                Plot No. 344, Third Floor, Near DDA Park,
-                Sector 19, Dwarka, New Delhi,
+                Plot No. 344, Third Floor, Near DDA Park, Sector 19, Dwarka, New
+                Delhi,
 
                 <p>Delhi 110075<br /></p>
               </div>
@@ -277,10 +274,14 @@
               <i class="material-icons brand-color">&#xE0E1;</i>
               <div class="mail">
                 <p>
-                  <a class="sub-heading-para" href="mailto:contact@aldebaranmedia.com"
+                  <a
+                    class="sub-heading-para"
+                    href="mailto:contact@aldebaranmedia.com"
                     >contact@aldebaranmedia.com</a
                   ><br />
-                  <a class="sub-heading-para" href="https://www.aldebaranmedia.com/"
+                  <a
+                    class="sub-heading-para"
+                    href="https://www.aldebaranmedia.com/"
                     >www.aldebaranmedia.com</a
                   >
                 </p>
@@ -293,7 +294,6 @@
       </div>
     </section>
     <!-- contact-form-section End -->
-
 
     <footer class="footer footer-four">
       <div class="primary-footer brand-bg text-center">
@@ -341,7 +341,7 @@
 
               <div class="footer-intro text-white">
                 <p class="sub-heading-para-white">
-                  Email: contact [ @ ] aldebaranmedia.com
+                  Email: contact@aldebaranmedia.com
                   <br />
                   Address:
                   <br />
@@ -405,39 +405,27 @@
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
- 
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/scripts.js"></script>
 
     <!-- Google Map Customization  -->
     <script type="text/javascript">
-
-let Who_are_you = document.getElementById("Who_are_you");
-Who_are_you.addEventListener("focus", (e) => {
-  let label = document.getElementById("select-label");
-  label.classList.add("active");
- 
-});
-Who_are_you.addEventListener("blur", (e) => {
-  if(e.target.value){
-    e.target.classList.add("valid");
-  }else{
-    e.target.classList.remove("valid");
-    let label = document.getElementById("select-label");
-  label.classList.remove("active");
-  }
-});
-
-
-
-
-
-
-
-
-
-
+      let Who_are_you = document.getElementById("Who_are_you");
+      Who_are_you.addEventListener("focus", (e) => {
+        let label = document.getElementById("select-label");
+        label.classList.add("active");
+      });
+      Who_are_you.addEventListener("blur", (e) => {
+        if (e.target.value) {
+          e.target.classList.add("valid");
+        } else {
+          e.target.classList.remove("valid");
+          let label = document.getElementById("select-label");
+          label.classList.remove("active");
+        }
+      });
 
       $("#gform").submit((e) => {
         e.preventDefault();
@@ -463,10 +451,6 @@ Who_are_you.addEventListener("blur", (e) => {
           },
         });
       });
-
-      
-
-      
     </script>
   </body>
 </html>

@@ -175,7 +175,7 @@ header .carousel-inner .item img {
 
 .details-section {
   min-height: 100%;
-  padding: 50px;
+  padding: 0px;
   align-items: flex-start;
   .text-content {
     height: 100%;
@@ -226,7 +226,7 @@ header .carousel-inner .item img {
 }
 
 .details-section-second {
-  padding: 50px;
+  padding: 0px;
 
   min-height: 100%;
   align-items: flex-start;
@@ -277,11 +277,13 @@ header .carousel-inner .item img {
 
 @media only screen and (min-width: 992px) {
   .details-section {
+    padding: 50px;
     .text-content {
       margin-top: 0;
     }
   }
   .details-section-second {
+    padding: 50px;
     .text-content {
       margin-top: 0;
     }
@@ -411,7 +413,7 @@ header .carousel-inner .item img {
 
 .types-of-publisher {
   .card {
-    min-height: 310px;
+    min-height: 260px;
   }
 }
 
