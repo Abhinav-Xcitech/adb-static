@@ -61,14 +61,15 @@ body{
     background-color: #fff;
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch !important;
     -webkit-font-smoothing: antialiased !important;
     scroll-behavior: smooth !important;
-
+    
 }
 
 html {
     font-family: 'Circular Std', sans-serif !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 
 html,
