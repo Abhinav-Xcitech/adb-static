@@ -70,7 +70,7 @@ body {
   min-height: 106vh;
 }
 
-@media only  screen and (min-width: 350px) {
+@media only  screen and (min-width: 328px) {
   .what-we-do{
     min-height: 85vh;
   }
