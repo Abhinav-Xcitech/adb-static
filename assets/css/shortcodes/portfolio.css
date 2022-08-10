@@ -4,6 +4,7 @@ Portfolio
 -----------------------------------------------------------------*/
 .portfolio-item {
     float: left;
+    width: 100%;
 }
 
 .portfolio-item .thumb {

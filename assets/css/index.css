@@ -60,7 +60,7 @@ body {
 
 
 .what-we-do{
-  min-height: 95vh;
+  min-height: 106vh;
 }
 
 @media only  screen and (min-width: 768px) {
@@ -76,7 +76,8 @@ body {
 
 .what-we-do.slick-slider img{
   height: 100%;
-  width: auto;
+  max-height: 300px;
+  object-fit: contain;
 }
 .slick-list {
   position: relative;
@@ -252,6 +253,7 @@ body {
   box-shadow: none;
   -webkit-box-shadow: none;
   background-color: transparent;
+  border: none;
 }
 .wrapper .card .circle {
   position: relative;
