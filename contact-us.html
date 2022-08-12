@@ -114,7 +114,7 @@
                   <li><a href="Influencer.html">As an Influencer</a></li>
                 </ul>
               </li>
-              <li class=""><a href="javascript:void(0)">Partner login </a></li>
+              <li class=""><a href="https://partners.aldebaranmedia.com/v2/sign/in">Partner login </a></li>
               <li class=""><a href="careers.html"> Careers</a></li>
 
               <li class="active">
@@ -203,7 +203,7 @@
                     >
 
                     <select
-                      name="Who_are_you "
+                      name="Who_are_you"
                       id="Who_are_you"
                       class="form-select contactus-select"
                       aria-label="Default select example"
@@ -211,7 +211,7 @@
                       <option value="" selected disabled></option>
                       <option value="Advertiser">I am an Advertiser</option>
                       <option value="Publisher">I am a Publisher</option>
-                      <option value="Publisher">I am an Influencer</option>
+                      <option value="Influencer">I am an Influencer</option>
                     </select>
                   </div>
                 </div>
@@ -225,7 +225,7 @@
                     <input
                       id="Subject"
                       type="text"
-                      name="Subject"
+                      name="subject"
                       class="validate"
                     />
                     <label for="Subject">Subject</label>
@@ -438,12 +438,34 @@
           toast: true,
           position: "top-right",
         });
+        const myFormData = new FormData(e.target);
+        const formDataObj = {};
+
+        myFormData.forEach((value, key) => (formDataObj[key] = value));
+        
+        let email_subject = "";
+        
+        if(formDataObj.Who_are_you == "Advertiser"){
+          email_subject = "Advertiser Enquiry";
+        }else if(formDataObj.Who_are_you == "Publisher"){
+          email_subject = "Publisher Enquiry";
+        }else if(formDataObj.Who_are_you == "Influencer"){
+          email_subject = "Influencer Enquiry";
+        }else{
+          email_subject = "Enquiry from Website";
+        }
+
+        formDataObj.email_subject = email_subject;
+        
+        
+        console.log(formDataObj );
+
         $.ajax({
           url: "https://script.google.com/macros/s/AKfycbzKG84fZQn6MC61_gejbn76I1l7FfTL8DabEvP-5EgGknazCgpiesk7O38nCt2JU9iAQw/exec",
           data: $("#gform").serialize(),
           method: "post",
           success: function (response) {
-            window.location.reload();
+           // window.location.reload();
             //window.location.href="https://google.com"
           },
           error: function (err) {
