@@ -115,6 +115,7 @@ select.contactus-select {
   margin-top: 40px;
   font-family: "Josefin Sans", sans-serif !important;
   border-radius: 0%;
+  appearance: revert !important;
 }
 select.contactus-select.valid {
   border-bottom: 1px solid #4caf50;

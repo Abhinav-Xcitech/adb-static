@@ -83,9 +83,15 @@ body {
 }
 @media only  screen and (min-width: 1024px) {
   .what-we-do{
+    min-height: 48vh;
+  }
+}
+@media only  screen and (min-width: 1200px) {
+  .what-we-do{
     min-height: 40vh;
   }
 }
+
 
 .what-we-do.slides_container .slide .imgWrapper{
   min-width: 200px;
