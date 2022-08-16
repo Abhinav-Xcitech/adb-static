@@ -70,7 +70,7 @@
     <!-- shortcodes -->
     <link href="assets/css/shortcodes/shortcodes.css" rel="stylesheet" />
     <!-- Style CSS -->
-    <link href="style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/custom/affiliate.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -269,6 +269,148 @@
             
         </div>
     </section>
+
+    <section class="mt-5 mb-5 "  >
+      <div class="container">
+          <h2 class="text-center title header-text">The </h1>
+            
+              <div class="mt-5">
+                <div class="cardSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/New_20Shoppers.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">New Shopper </h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Customers who have installed your app and
+                            completed registration but have not made a
+                            transaction as of yet.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/Drop_customer.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">Drop cart customers: </h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Customers who added products in the shopping
+                            cart but did not complete the transaction. Convert
+                            these users using dynamic ads using the browsed
+                            & similar products.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/Dormant_shopper.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">Lapsed or dormant shoppers </h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Activate dormant or lapsed users with targeted
+                            ads. Customers who have not made a purchase in
+                            the last 30 days or a specific period of time.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/high_shopper.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">Hight LTV shoppers </h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Boost engagement with regular shoppers by
+                            targeting higher average order value or increasing
+                            the cart size. Upselling and Cross-selling product
+                            ads work wonders for this customer cohort.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/loyal_20customer.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">Loyalty shoppers</h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Engage with loyal customers by using reminder ads
+in multiple creative formats. Remind them that you
+value them by running customised campaigns.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/look_modelling.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">Lookalike modelling: </h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Our machine learning algorithms work on the
+                            customers who have browsed the products
+                            recently and help you acquire new customers by
+                            understanding the audience segments that need
+                            retargetting based on the existing customer
+                            patterns.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="img">
+                            <img src="assets/img/universal-tracking/high_shopper.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            <h4 class="text-center sub-heading">Hight LTV shoppers </h4>
+                          </div>
+                          <p class="sub-heading-para">
+                            Boost engagement with regular shoppers by
+                            targeting higher average order value or increasing
+                            the cart size. Upselling and Cross-selling product
+                            ads work wonders for this customer cohort.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+          
+      </div>
+  </section>
    
     <section class="mt-5 mb-5 the-recipie"  >
         <div class="container">
@@ -632,6 +774,24 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+
+     
+      var cardSwiper = new Swiper( '.cardSwiper', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    effect: 'coverflow',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflow: {
+      rotate: 0,
+      stretch: 100,
+      depth: 150,
+      modifier: 1.5,
+      slideShadows : false,
+    }
+} );
     </script>
   </body>
 </html>
