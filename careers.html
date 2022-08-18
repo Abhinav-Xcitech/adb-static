@@ -161,10 +161,7 @@
             <form
               name="contact-form"
               id="career_form"
-              class="career_form"
-              method="post"
-              enctype="multipart/form-data"
-              action="contact/mail.php"
+              class="career_form"              
             >
               <div class="row">
                 <div class="col-md-6">
@@ -226,7 +223,7 @@
                   <div class="input-field">
                     <input
                       id="skills"
-                      type="tel"
+                      type="text"
                       name="skills"
                       class="validate"
                     />
@@ -243,8 +240,8 @@
                   <div class="input-field">
                     <input
                       id="Subject"
-                      type="text"
-                      name="Subject"
+                      type="number"
+                      name="experience"
                       class="validate"
                     />
                     <label for="Subject">Total Experience</label>
@@ -265,10 +262,19 @@
                 <!-- /.col-md-6 -->
               </div>
               <!-- /.row -->
+              <div class="row mt-20">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LfrBYIhAAAAAPGp8mz65coCDJkvd5HgpZ_9DQXC"
+                  data-callback="onRecaptchaSuccess"
+                  data-expired-callback="onRecaptchaResponseExpiry"
+                  data-error-callback="onRecaptchaError"
+                ></div>
+              </div>
+              
 
               <button
                 type="submit"
-                name="submit"
                 class="waves-effect waves-light btn btn-primary submit-button mt-30"
               >
                 Submit
@@ -395,6 +401,7 @@
     <script src="assets/js/menuzord.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/jquery.sticky.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <script src="assets/js/jquery.stellar.min.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
@@ -409,66 +416,27 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="contact/mail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
     <script src="assets/js/scripts.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $(".customer-logos").slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 4,
-              },
-            },
-            {
-              breakpoint: 520,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-          ],
-        });
+      var toastMixin = Swal.mixin({
+        toast: true,
+        icon: "success",
+        title: "General Title",
+        animation: false,
+        position: "top-right",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
       });
-
-      let options = {
-        startAngle: -1.55,
-        size: 150,
-        value: 0.85,
-        fill: { gradient: ["#a445b2", "#fa4299"] },
-      };
-      $(".circle .bar")
-        .circleProgress(options)
-        .on("circle-animation-progress", function (event, progress, stepValue) {
-          $(this)
-            .parent()
-            .find("span")
-            .text(String(stepValue.toFixed(2).substr(2)) + "%");
-        });
-      $(".Affiliate  .bar").circleProgress({
-        value: 0.95,
-      });
-      $(".Branding .bar").circleProgress({
-        value: 0.85,
-      });
-      $(".Media_Buying .bar").circleProgress({
-        value: 0.8,
-      });
-      $(".Mobile .bar").circleProgress({
-        value: 0.72,
-      });
-      $(".Influencer .bar").circleProgress({
-        value: 0.5,
-      });
-
+      
+     
       (function ($) {
         $(function () {
           //  open and close nav
@@ -497,23 +465,7 @@
         });
       })(jQuery);
 
-      $(document).ready(function () {
-        //initialize swiper when document ready
-        var mySwiper = new Swiper(".swiper-container", {
-          loop: true,
-          spaceBetween: 50,
-          speed: 1000,
-          effect: "fade",
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-        });
-      });
+     
 
       let Who_are_you = document.getElementById("Who_are_you");
       Who_are_you.addEventListener("focus", (e) => {
@@ -529,6 +481,120 @@
           label.classList.remove("active");
         }
       });
+
+
+      let isRecaptchaValidated = false;
+
+      function toggleRecaptchaFormMessage(type = "error", hide = false) {
+        document.getElementById(`recaptcha-form-${type}`).style.display = hide
+          ? "none"
+          : "inherit";
+      }
+
+      function onRecaptchaSuccess() {
+        isRecaptchaValidated = true;
+      }
+
+      function onRecaptchaError() {
+        toggleRecaptchaFormMessage("error");
+        toggleRecaptchaFormMessage("success", true);
+      }
+
+      function onRecaptchaResponseExpiry() {
+        onRecaptchaError();
+      }
+
+      window.onload = function () {
+        const recaptchaForm = document.getElementById("career_form");
+        recaptchaForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // failure
+          if (!isRecaptchaValidated) {
+            toggleRecaptchaFormMessage("error");
+            toggleRecaptchaFormMessage("success", true);
+            return;
+          }
+
+          // success
+          toggleRecaptchaFormMessage("error", true);
+          toggleRecaptchaFormMessage("success");
+        });
+      };
+
+      $("#career_form").validate({
+        rules: {
+          name: {
+            required: true,
+          },
+          email: {
+            required: true,
+            email: true,
+          },
+          role: {
+            required: true,
+          },
+          skills: {
+            required: true,
+          },
+          experience: {
+            required: true,
+            digits: true,
+          },
+         
+         
+        },
+        messages: {
+         
+        },
+        errorPlacement: function (error, element) {
+          if (element.is(":checkbox")) {
+            error.appendTo(element.parents(".agree"));
+          } else {
+            error.insertAfter(element);
+          }
+        },
+        submitHandler: function (form) {
+          alert('done')
+          if (isRecaptchaValidated) {
+          
+
+            toastMixin.fire({
+              animation: true,
+              title: "Form submitted successfully",
+              icon: 'success',
+            });
+            console.log(form)
+            const myFormData = new FormData(form);
+            const formDataObj = {};
+
+            myFormData.forEach((value, key) => (formDataObj[key] = value));
+
+
+            console.log(formDataObj);
+
+            // $.ajax({
+            //   url: "https://script.google.com/macros/s/AKfycbzKG84fZQn6MC61_gejbn76I1l7FfTL8DabEvP-5EgGknazCgpiesk7O38nCt2JU9iAQw/exec",
+            //   data: $("#gform").serialize(),
+            //   method: "post",
+            //   success: function (response) {
+            //     // window.location.reload();
+            //     //window.location.href="https://google.com"
+            //   },
+            //   error: function (err) {
+            //     alert("Something Error");
+            //   },
+            // });
+          } else {
+            toastMixin.fire({
+              animation: true,
+              title: "Please verify that you are not a robot",
+              icon: 'error'
+            });
+          }
+        },
+      });
+    
     </script>
   </body>
 </html>

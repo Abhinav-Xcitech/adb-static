@@ -16,7 +16,6 @@ input[type="search"],
 textarea.materialize-textarea {
   border-bottom: 1px solid #9b9b9b;
   font-size: 18px !important;
-  font-family: "Josefin Sans", sans-serif !important;
 }
 
 input[type="text"]:focus:not([readonly]),

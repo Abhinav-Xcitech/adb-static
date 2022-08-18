@@ -14,7 +14,7 @@
     />
     <meta name="author" content="trendytheme.net" />
 
-    <title>Al de baran digital Media-Contact Us </title>
+    <title>Al de baran digital Media-Contact Us</title>
 
     <!--  favicon -->
     <link rel="shortcut icon" href="assets/img/ico/favicon.png" />
@@ -114,7 +114,11 @@
                   <li><a href="Influencer.html">As an Influencer</a></li>
                 </ul>
               </li>
-              <li class=""><a href="https://partners.aldebaranmedia.com/v2/sign/in">Partner login </a></li>
+              <li class="">
+                <a href="https://partners.aldebaranmedia.com/v2/sign/in"
+                  >Partner login
+                </a>
+              </li>
               <li class=""><a href="careers.html"> Careers</a></li>
 
               <li class="active">
@@ -132,14 +136,10 @@
     <section class="banner contact-main">
       <div class="container">
         <div class="banner-content">
-          <h4 class="banner-heading mt-60">
-            Get in touch  
-          </h4>
-          <div class="title-text banner-para  mb-20">
+          <h4 class="banner-heading mt-60">Get in touch</h4>
+          <div class="title-text banner-para mb-20">
             Want to get in touch ? We would love to hear from you
           </div>
-
-         
         </div>
       </div>
     </section>
@@ -187,7 +187,7 @@
                   <div class="input-field">
                     <input
                       id="phone"
-                      type="tel"
+                      type="number"
                       name="phone"
                       class="validate"
                     />
@@ -210,9 +210,11 @@
                       <option value="" selected disabled></option>
                       <option value="Advertiser">I am an Advertiser</option>
                       <option value="Publisher">I am a Publisher</option>
-                      <option value ="For Partnerships">For Partnerships</option>
-                      <option value ="Recruitment Agency">Recruitment Agency</option>
-                      <option value ="Others">Others</option>
+                      <option value="For Partnerships">For Partnerships</option>
+                      <option value="Recruitment Agency">
+                        Recruitment Agency
+                      </option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
                 </div>
@@ -237,13 +239,23 @@
               </div>
               <!-- /.row -->
 
-              <div class="input-field">
+              <div class="input-field textarea">
                 <textarea
                   name="message"
                   id="message"
                   class="materialize-textarea"
                 ></textarea>
                 <label for="message">Message</label>
+              </div>
+
+              <div>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LfrBYIhAAAAAPGp8mz65coCDJkvd5HgpZ_9DQXC"
+                  data-callback="onRecaptchaSuccess"
+                  data-expired-callback="onRecaptchaResponseExpiry"
+                  data-error-callback="onRecaptchaError"
+                ></div>
               </div>
 
               <button
@@ -400,12 +412,14 @@
     <script src="assets/js/bootstrap-tabcollapse.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/jquery.sticky.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <script src="assets/js/jquery.stellar.min.js"></script>
     <script src="assets/js/jquery.inview.min.js"></script>
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -413,6 +427,21 @@
 
     <!-- Google Map Customization  -->
     <script type="text/javascript">
+      var toastMixin = Swal.mixin({
+        toast: true,
+        icon: "success",
+        title: "General Title",
+        animation: false,
+        position: "top-right",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
+      });
+      
       let Who_are_you = document.getElementById("Who_are_you");
       Who_are_you.addEventListener("focus", (e) => {
         let label = document.getElementById("select-label");
@@ -428,51 +457,131 @@
         }
       });
 
-      $("#gform").submit((e) => {
-        e.preventDefault();
-        Swal.fire({
-          text: "Form submitted successfully",
-          target: "#custom-target",
-          customClass: {
-            container: "position-absolute",
-          },
-          toast: true,
-          position: "top-right",
+      let isRecaptchaValidated = false;
+
+      function toggleRecaptchaFormMessage(type = "error", hide = false) {
+        document.getElementById(`recaptcha-form-${type}`).style.display = hide
+          ? "none"
+          : "inherit";
+      }
+
+      function onRecaptchaSuccess() {
+        isRecaptchaValidated = true;
+      }
+
+      function onRecaptchaError() {
+        toggleRecaptchaFormMessage("error");
+        toggleRecaptchaFormMessage("success", true);
+      }
+
+      function onRecaptchaResponseExpiry() {
+        onRecaptchaError();
+      }
+
+      window.onload = function () {
+        const recaptchaForm = document.getElementById("gform");
+        recaptchaForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // failure
+          if (!isRecaptchaValidated) {
+            toggleRecaptchaFormMessage("error");
+            toggleRecaptchaFormMessage("success", true);
+            return;
+          }
+
+          // success
+          toggleRecaptchaFormMessage("error", true);
+          toggleRecaptchaFormMessage("success");
         });
-        const myFormData = new FormData(e.target);
-        const formDataObj = {};
+      };
 
-        myFormData.forEach((value, key) => (formDataObj[key] = value));
-        
-        let email_subject = "";
-        
-        if(formDataObj.Who_are_you == "Advertiser"){
-          email_subject = "Advertiser Enquiry";
-        }else if(formDataObj.Who_are_you == "Publisher"){
-          email_subject = "Publisher Enquiry";
-        }else if(formDataObj.Who_are_you == "Influencer"){
-          email_subject = "Influencer Enquiry";
-        }else{
-          email_subject = "Enquiry from Website";
-        }
-
-        formDataObj.email_subject = email_subject;
-        
-        
-        console.log(formDataObj );
-
-        $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbzKG84fZQn6MC61_gejbn76I1l7FfTL8DabEvP-5EgGknazCgpiesk7O38nCt2JU9iAQw/exec",
-          data: $("#gform").serialize(),
-          method: "post",
-          success: function (response) {
-           // window.location.reload();
-            //window.location.href="https://google.com"
+      $("#gform").validate({
+        rules: {
+          name: {
+            required: true,
           },
-          error: function (err) {
-            alert("Something Error");
+          email: {
+            required: true,
+            email: true,
           },
-        });
+          phone: {
+            required: true,
+            digits: true,
+          },
+          Who_are_you: {
+            required: true,
+          },
+          subject: {
+            required: true,
+          },
+          message: {
+            required: true,
+          },
+        },
+        messages: {
+          phone: {
+            digits: "enter a valid contact number",
+          },
+        },
+        errorPlacement: function (error, element) {
+          if (element.is(":checkbox")) {
+            error.appendTo(element.parents(".agree"));
+          } else {
+            error.insertAfter(element);
+          }
+        },
+        submitHandler: function (form) {
+          if (isRecaptchaValidated) {
+          
+
+            toastMixin.fire({
+              animation: true,
+              title: "Form submitted successfully",
+              icon: 'success',
+            });
+            console.log(form)
+            const myFormData = new FormData(form);
+            const formDataObj = {};
+
+            myFormData.forEach((value, key) => (formDataObj[key] = value));
+
+            let email_subject = "";
+
+            if (formDataObj.Who_are_you == "Advertiser") {
+              email_subject = "Advertiser Enquiry";
+            } else if (formDataObj.Who_are_you == "Publisher") {
+              email_subject = "Publisher Enquiry";
+            } else if (formDataObj.Who_are_you == "Influencer") {
+              email_subject = "Influencer Enquiry";
+            } else {
+              email_subject = "Enquiry from Website";
+            }
+
+            formDataObj.email_subject = email_subject;
+
+            console.log(formDataObj);
+
+            $.ajax({
+              url: "",
+              data: formDataObj,
+              method: "post",
+              success: function (response) {
+                // window.location.reload();
+                //window.location.href="https://google.com"
+              },
+              error: function (err) {
+                alert("Something Error");
+              },
+            });
+          } else {
+            toastMixin.fire({
+              animation: true,
+              title: "Please verify that you are not a robot",
+              icon: 'error'
+            });
+          }
+        },
       });
     </script>
   </body>
