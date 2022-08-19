@@ -1,3 +1,56 @@
+.img, .imgWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.img img, .imgWrapper img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features_of_universal_tagging .col-lg-4 {
+  height: 100%;
+}
+
+.features_of_universal_tagging .col-lg-4 .card {
+  border-left: 3px solid #d30023;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.features_of_universal_tagging .col-lg-4 .card:hover {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.features_of_universal_tagging .img {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .features_of_universal_tagging .col-lg-4 {
+    height: 100%;
+  }
+  .features_of_universal_tagging .img {
+    min-height: 400px;
+  }
+}
+
 header .carousel-inner .item {
   height: 100vh;
 }
@@ -107,7 +160,6 @@ header .carousel-inner .item img {
 }
 
 .swiper-slide {
-  min-height: 600px;
   height: 100%;
   text-align: center;
 }
@@ -681,8 +733,9 @@ header .carousel-inner .item img {
 
 ul.Overview-list li {
   list-style-type: disc !important;
-  font-size: 18px;
-  color: #000000;
+  font-size: 18px !important;
+  color: #616060 !important;
+  font-weight: 300 !important;
   margin: 15px 0;
 }
 
@@ -745,9 +798,10 @@ ul.Overview-list li {
 .Integration ul li,
 .Satisfied ul li {
   list-style-type: disc !important;
-  font-size: 18px;
   margin: 15px 0;
-  color: #000000;
+  font-size: 18px !important;
+  color: #616060 !important;
+  font-weight: 300 !important;
 }
 
 .major-benefits-for-you .img {

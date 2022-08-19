@@ -230,7 +230,6 @@ button:focus {
 
 
 .section-main-heading{
-    font-family: 'Josefin Sans', sans-serif !important;
     font-size: 35px !important;
     font-weight: 700 !important;
     text-align: center ;
@@ -2410,6 +2409,8 @@ KEY FRAME
 #preloader .progress .indeterminate{
     background:#03a9f4;
 }
+
+
 
 
 
