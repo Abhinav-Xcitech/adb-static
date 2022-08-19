@@ -158,11 +158,7 @@
 
         <div class="row">
           <div class="col-md-12">
-            <form
-              name="contact-form"
-              id="career_form"
-              class="career_form"              
-            >
+            <form name="contact-form" id="career_form" class="career_form">
               <div class="row">
                 <div class="col-md-6">
                   <div class="input-field">
@@ -205,20 +201,39 @@
                       aria-label="Default select example"
                     >
                       <option value="" selected disabled></option>
-                      <option value="Internship - Client Servicing"> Internship - Client Servicing</option>
-                      <option value="Internship - Business Development"> Internship - Business Development</option>
-                      <option value="Internship - Publisher Management"> Internship - Publisher Management</option>
-                      <option value="Internship - Influencer Management"> Internship - Influencer Management</option>
-                      <option value="Full Time - Facebook Advertising"> Full Time - Facebook Advertising</option>
-                      <option value="Full Time - Native Advertising"> Full Time - Native Advertising</option>
-                      <option value="Full Time - Media Buying"> Full Time - Media Buying</option>
-                      <option value="Full Time - Google Advertising (Display + Search)"> Full Time - Google Advertising (Display + Search)</option>
-                      <option value="Full Time - Bing Advertising"> Full Time -Bing Advertising </option>
-                  
+                      <option value="Internship - Client Servicing">
+                        Internship - Client Servicing
+                      </option>
+                      <option value="Internship - Business Development">
+                        Internship - Business Development
+                      </option>
+                      <option value="Internship - Publisher Management">
+                        Internship - Publisher Management
+                      </option>
+                      <option value="Internship - Influencer Management">
+                        Internship - Influencer Management
+                      </option>
+                      <option value="Full Time - Facebook Advertising">
+                        Full Time - Facebook Advertising
+                      </option>
+                      <option value="Full Time - Native Advertising">
+                        Full Time - Native Advertising
+                      </option>
+                      <option value="Full Time - Media Buying">
+                        Full Time - Media Buying
+                      </option>
+                      <option
+                        value="Full Time - Google Advertising (Display + Search)"
+                      >
+                        Full Time - Google Advertising (Display + Search)
+                      </option>
+                      <option value="Full Time - Bing Advertising">
+                        Full Time -Bing Advertising
+                      </option>
                     </select>
                   </div>
                 </div>
-          
+
                 <div class="col-md-6">
                   <div class="input-field">
                     <input
@@ -241,7 +256,7 @@
                     <input
                       id="Subject"
                       type="number"
-                      name="experience"
+                      name="total_experience"
                       class="validate"
                     />
                     <label for="Subject">Total Experience</label>
@@ -252,8 +267,9 @@
                     <input
                       id="resume"
                       type="file"
-                      name="resume"
+                      name="file"
                       class="validate"
+                      accept=".pdf,.doc,.docx"
                     />
                     <label for="resume" class="active">CV / Resume</label>
                   </div>
@@ -271,7 +287,6 @@
                   data-error-callback="onRecaptchaError"
                 ></div>
               </div>
-              
 
               <button
                 type="submit"
@@ -397,27 +412,26 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/materialize/js/materialize.min.js"></script>
     <script src="assets/js/menuzord.js"></script>
+    <script src="assets/js/bootstrap-tabcollapse.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/jquery.sticky.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <script src="assets/js/jquery.stellar.min.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/jquery.inview.min.js"></script>
-    <script src="assets/js/animated-headline.js"></script>
-    <script src="assets/js/jquery.shuffle.min.js"></script>
     <script src="assets/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
-
     <script src="assets/js/scripts.js"></script>
 
     <script>
@@ -435,8 +449,7 @@
           toast.addEventListener("mouseleave", Swal.resumeTimer);
         },
       });
-      
-     
+
       (function ($) {
         $(function () {
           //  open and close nav
@@ -465,8 +478,6 @@
         });
       })(jQuery);
 
-     
-
       let Who_are_you = document.getElementById("Who_are_you");
       Who_are_you.addEventListener("focus", (e) => {
         let label = document.getElementById("select-label");
@@ -481,7 +492,6 @@
           label.classList.remove("active");
         }
       });
-
 
       let isRecaptchaValidated = false;
 
@@ -541,12 +551,8 @@
             required: true,
             digits: true,
           },
-         
-         
         },
-        messages: {
-         
-        },
+        messages: {},
         errorPlacement: function (error, element) {
           if (element.is(":checkbox")) {
             error.appendTo(element.parents(".agree"));
@@ -555,46 +561,52 @@
           }
         },
         submitHandler: function (form) {
-          alert('done')
           if (isRecaptchaValidated) {
-          
-
-            toastMixin.fire({
-              animation: true,
-              title: "Form submitted successfully",
-              icon: 'success',
-            });
-            console.log(form)
             const myFormData = new FormData(form);
             const formDataObj = {};
-
             myFormData.forEach((value, key) => (formDataObj[key] = value));
 
+            toastMixin.fire({
+                    icon: "success",
+                    title: "Your application has been submitted successfully",
+                    animation: true,
+                  });
 
-            console.log(formDataObj);
-
-            // $.ajax({
-            //   url: "https://script.google.com/macros/s/AKfycbzKG84fZQn6MC61_gejbn76I1l7FfTL8DabEvP-5EgGknazCgpiesk7O38nCt2JU9iAQw/exec",
-            //   data: $("#gform").serialize(),
-            //   method: "post",
-            //   success: function (response) {
-            //     // window.location.reload();
-            //     //window.location.href="https://google.com"
-            //   },
-            //   error: function (err) {
-            //     alert("Something Error");
-            //   },
-            // });
+            axios
+              .post(
+                "https://coup.aldebaranmedia.com/admin/v2/jobApplication",
+                myFormData
+              )
+              .then((response) => {
+                if (response.data.success) {
+                
+                  form.reset();
+                  window.location.reload();
+                } else {
+                  toastMixin.fire({
+                    icon: "error",
+                    title: "Something went wrong",
+                    animation: true,
+                  });
+                }
+              })
+              .catch((error) => {
+                toastMixin.fire({
+                  animation: true,
+                  title: "Error!",
+                  text: "Something went wrong!",
+                  icon: "error",
+                });
+              });
           } else {
             toastMixin.fire({
               animation: true,
               title: "Please verify that you are not a robot",
-              icon: 'error'
+              icon: "error",
             });
           }
         },
       });
-    
     </script>
   </body>
 </html>

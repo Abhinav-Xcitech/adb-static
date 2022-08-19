@@ -188,7 +188,7 @@
                     <input
                       id="phone"
                       type="number"
-                      name="phone"
+                      name="phone_number"
                       class="validate"
                     />
                     <label for="phone">Phone Number</label>
@@ -202,7 +202,7 @@
                     >
 
                     <select
-                      name="Who_are_you"
+                      name="who_are_you"
                       id="Who_are_you"
                       class="form-select contactus-select"
                       aria-label="Default select example"
@@ -540,7 +540,6 @@
               title: "Form submitted successfully",
               icon: 'success',
             });
-            console.log(form)
             const myFormData = new FormData(form);
             const formDataObj = {};
 
@@ -560,18 +559,35 @@
 
             formDataObj.email_subject = email_subject;
 
-            console.log(formDataObj);
 
             $.ajax({
-              url: "",
+              url: "https://coup.aldebaranmedia.com/admin/v2/contact-us",
               data: formDataObj,
               method: "post",
               success: function (response) {
-                // window.location.reload();
-                //window.location.href="https://google.com"
+                if(response.success){
+                toastMixin.fire({
+                  icon: "success",
+                  title: "Your application has been submitted successfully",
+                  animation: true,
+
+                });
+                form.reset();
+                window.location.reload();
+              }else{
+                toastMixin.fire({
+                  icon: "error",
+                  title: "Something went wrong",
+                  animation: true,
+                });
+              }
               },
               error: function (err) {
-                alert("Something Error");
+                toastMixin.fire({
+              animation: true,
+              title: "Please verify that you are not a robot",
+              icon: 'error'
+            });
               },
             });
           } else {
