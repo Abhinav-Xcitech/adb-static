@@ -420,7 +420,7 @@
     <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
-
+ 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/scripts.js"></script>
@@ -441,21 +441,21 @@
           toast.addEventListener("mouseleave", Swal.resumeTimer);
         },
       });
-      
-      let Who_are_you = document.getElementById("Who_are_you");
-      Who_are_you.addEventListener("focus", (e) => {
-        let label = document.getElementById("select-label");
-        label.classList.add("active");
-      });
-      Who_are_you.addEventListener("blur", (e) => {
+
+let Who_are_you = document.getElementById("Who_are_you");
+Who_are_you.addEventListener("focus", (e) => {
+  let label = document.getElementById("select-label");
+  label.classList.add("active");
+});
+Who_are_you.addEventListener("blur", (e) => {
         if (e.target.value) {
-          e.target.classList.add("valid");
+    e.target.classList.add("valid");
         } else {
-          e.target.classList.remove("valid");
-          let label = document.getElementById("select-label");
-          label.classList.remove("active");
-        }
-      });
+    e.target.classList.remove("valid");
+    let label = document.getElementById("select-label");
+  label.classList.remove("active");
+  }
+});
 
       let isRecaptchaValidated = false;
 
@@ -533,13 +533,13 @@
         },
         submitHandler: function (form) {
           if (isRecaptchaValidated) {
-          
+
 
             toastMixin.fire({
               animation: true,
               title: "Form submitted successfully",
               icon: 'success',
-            });
+        });
             const myFormData = new FormData(form);
             const formDataObj = {};
 
@@ -560,11 +560,11 @@
             formDataObj.email_subject = email_subject;
 
 
-            $.ajax({
+        $.ajax({
               url: "https://coup.aldebaranmedia.com/admin/v2/contact-us",
               data: formDataObj,
-              method: "post",
-              success: function (response) {
+          method: "post",
+          success: function (response) {
                 if(response.success){
                 toastMixin.fire({
                   icon: "success",
@@ -573,7 +573,7 @@
 
                 });
                 form.reset();
-                window.location.reload();
+            window.location.reload();
               }else{
                 toastMixin.fire({
                   icon: "error",
@@ -581,21 +581,21 @@
                   animation: true,
                 });
               }
-              },
-              error: function (err) {
+          },
+          error: function (err) {
                 toastMixin.fire({
               animation: true,
               title: "Please verify that you are not a robot",
               icon: 'error'
             });
-              },
-            });
+          },
+        });
           } else {
             toastMixin.fire({
               animation: true,
               title: "Please verify that you are not a robot",
               icon: 'error'
-            });
+      });
           }
         },
       });

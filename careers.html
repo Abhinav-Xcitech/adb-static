@@ -264,13 +264,13 @@
                 </div>
                 <div class="col-md-6">
                   <div class="input-field">
-                    <input
+                      <input
                       id="resume"
                       type="file"
                       name="file"
                       class="validate"
                       accept=".pdf,.doc,.docx"
-                    />
+                      />
                     <label for="resume" class="active">CV / Resume</label>
                   </div>
                 </div>
@@ -447,7 +447,7 @@
         didOpen: (toast) => {
           toast.addEventListener("mouseenter", Swal.stopTimer);
           toast.addEventListener("mouseleave", Swal.resumeTimer);
-        },
+            },
       });
 
       (function ($) {
@@ -500,7 +500,7 @@
           ? "none"
           : "inherit";
       }
-
+      
       function onRecaptchaSuccess() {
         isRecaptchaValidated = true;
       }
