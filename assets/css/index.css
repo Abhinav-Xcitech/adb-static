@@ -7,7 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
 .slick-slide {
   margin: 0px 20px;
 }
@@ -16,17 +15,22 @@ body {
   width: 100%;
 }
 
-
 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 1rem 0;
   list-style-type: none;
 }
+
 .slick-dots li {
   margin: 0 0.25rem;
 }
+
 .slick-dots button {
   display: block;
   width: 1rem;
@@ -37,6 +41,7 @@ body {
   background-color: orange;
   text-indent: -9999px;
 }
+
 .slick-dots li.slick-active button {
   background-color: red;
 }
@@ -45,7 +50,8 @@ body {
   margin-top: 50px;
   position: relative;
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -58,54 +64,53 @@ body {
   max-height: 100px;
 }
 
-@media only  screen and (min-width: 425px) {
+@media only screen and (min-width: 425px) {
   .slick-slider {
-    
     max-height: 200px;
   }
 }
-  
 
-.what-we-do{
+.what-we-do {
   min-height: 106vh;
 }
 
-@media only  screen and (min-width: 328px) {
-  .what-we-do{
+@media only screen and (min-width: 328px) {
+  .what-we-do {
     min-height: 80vh;
   }
 }
 
-@media only  screen and (min-width: 768px) {
-  .what-we-do{
+@media only screen and (min-width: 768px) {
+  .what-we-do {
     min-height: 70vh;
   }
 }
-@media only  screen and (min-width: 1024px) {
-  .what-we-do{
+
+@media only screen and (min-width: 1024px) {
+  .what-we-do {
     min-height: 48vh;
   }
 }
-@media only  screen and (min-width: 1200px) {
-  .what-we-do{
+
+@media only screen and (min-width: 1200px) {
+  .what-we-do {
     min-height: 44vh;
   }
 }
 
-
-.what-we-do.slides_container .slide .imgWrapper{
+.what-we-do.slides_container .slide .imgWrapper {
   min-width: 200px;
   max-width: 400px;
   width: 100%;
   height: 100%;
 }
 
-.what-we-do.slides_container .slide img{
+.what-we-do.slides_container .slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-
 
 .slick-list {
   position: relative;
@@ -114,9 +119,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .slick-list:focus {
   outline: none;
 }
+
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
@@ -125,9 +132,6 @@ body {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -137,14 +141,17 @@ body {
   left: 0;
   display: block;
 }
+
 .slick-track:before,
 .slick-track:after {
   display: table;
   content: "";
 }
+
 .slick-track:after {
   clear: both;
 }
+
 .slick-loading .slick-track {
   visibility: hidden;
 }
@@ -155,29 +162,37 @@ body {
   height: 100%;
   min-height: 1px;
 }
+
 [dir="rtl"] .slick-slide {
   float: right;
 }
+
 .slick-slide img {
   display: block;
 }
+
 .slick-slide.slick-loading img {
   display: none;
 }
+
 .slick-slide.dragging img {
   pointer-events: none;
 }
+
 .slick-initialized .slick-slide {
   display: block;
 }
+
 .slick-loading .slick-slide {
   visibility: hidden;
 }
+
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
+
 .slick-arrow.slick-hidden {
   display: none;
 }
@@ -190,15 +205,19 @@ body {
 .service-border:nth-child(1) {
   border-bottom: 0.5px solid #ccc;
 }
+
 .service-border:nth-child(2) {
   border-bottom: 0.5px solid #ccc;
 }
+
 .service-border:nth-child(3) {
   border-bottom: 0.5px solid #ccc;
 }
+
 .service-border:nth-child(4) {
   border-bottom: 0.5px solid #ccc;
 }
+
 .service-border:nth-child(5) {
   border-bottom: 0.5px solid #ccc;
 }
@@ -255,33 +274,53 @@ body {
 .featured .icon img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .featured .service-border:hover .icon img {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .wrapper .card {
   width: calc(20% - 8px);
   height: 300px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   box-shadow: none;
   -webkit-box-shadow: none;
   background-color: transparent;
   border: none;
 }
+
 .wrapper .card .circle {
   position: relative;
   height: 150px;
@@ -289,42 +328,56 @@ body {
   border-radius: 50%;
   cursor: default;
 }
+
 .card .circle .box,
 .card .circle .box span {
   position: absolute;
   top: 50%;
   left: 50%;
 }
+
 .card .circle .box {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 .card .circle:hover .box {
-  transform: translate(-50%, -50%) scale(0.91);
+  -webkit-transform: translate(-50%, -50%) scale(0.91);
+          transform: translate(-50%, -50%) scale(0.91);
 }
+
 .card .circle .box span,
 .wrapper .card .text {
   background: -webkit-linear-gradient(left, #c24d61, #d30023);
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: none; */
 }
+
 .circle .box span {
   font-size: 38px;
   font-family: sans-serif;
   font-weight: 600;
-  transform: translate(-45%, -45%);
+  -webkit-transform: translate(-45%, -45%);
+          transform: translate(-45%, -45%);
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
+
 .card .circle:hover .box span {
-  transform: translate(-45%, -45%) scale(1.09);
+  -webkit-transform: translate(-45%, -45%) scale(1.09);
+          transform: translate(-45%, -45%) scale(1.09);
 }
+
 .card .text {
   font-size: 20px;
   font-weight: 600;
 }
+
 @media (max-width: 753px) {
   .wrapper {
     max-width: 700px;
@@ -334,6 +387,7 @@ body {
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 505px) {
   .wrapper {
     max-width: 500px;
@@ -358,31 +412,34 @@ body {
 .upper-wave {
   width: 100%;
   height: 100%;
-  background : url('../img/svg/upper-wavw.svg');
+  background: url("../img/svg/upper-wavw.svg");
   background-position: center top;
   background-repeat: no-repeat;
   /* -webkit-text-fill-color: none; */
 }
 
-
 .slides_container {
-  position:relative;
-  overflow:hidden;
-  width:100%;
-  height:auto;
- 
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
   padding: 10px;
 }
-  .slides_container .slide {
-      position:absolute;
-      width:100%;
-      height:auto;
-      visibility:hidden;
-      opacity:0;
-      transition:opacity 1s ease, visibility 0s ease 1s;
-  }
-  .slides_container .slide.active {
-      visibility:visible;
-      opacity:1;
-      transition:opacity 4s ease;
-  }
+
+.slides_container .slide {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease, visibility 0s ease 1s;
+  transition: opacity 1s ease, visibility 0s ease 1s;
+}
+
+.slides_container .slide.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 4s ease;
+  transition: opacity 4s ease;
+}
+/*# sourceMappingURL=index.css.map */
