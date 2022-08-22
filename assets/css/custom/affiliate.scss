@@ -913,6 +913,12 @@ ul.Overview-list li {
   padding: 70px 0;
 }
 /* Default slide */
+.center-slider {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .center-slider .slick-slide{
   color: #FFF;
   height: 100%;
