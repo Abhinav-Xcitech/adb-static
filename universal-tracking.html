@@ -256,7 +256,7 @@
             <div class="wrapper">
 
               <div class="center-slider">
-                <div class="slick-slide">
+                <div class="">
                   <div class="card">
                     <div class="card-body">
                       <div class="img">
@@ -273,7 +273,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slick-slide">
+                <div class="">
                   <div class="card">
                     <div class="card-body">
                       <div class="img">
@@ -291,7 +291,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slick-slide">
+                <div class="">
                   <div class="card">
                     <div class="card-body">
                       <div class="img">
@@ -308,7 +308,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slick-slide">
+                <div class="">
                   <div class="card">
                     <div class="card-body">
                       <div class="img">
@@ -326,7 +326,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slick-slide">
+                <div class="">
                   <div class="card">
                     <div class="card-body">
                       <div class="img">
@@ -343,7 +343,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="slick-slide">
+                <div class="">
                   <div class="card">
                     <div class="card-body">
                       <div class="img">
@@ -373,6 +373,123 @@
 
 
 
+    </div>
+
+
+    <div class="container">
+      <div class="wrapper">
+        <h2>Slick Carousel Example</h2>
+            <div class="carousel">
+               
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="img">
+                      <img src="assets/img/universal-tracking/New_20Shoppers.webp" alt="">
+                    </div>
+                    <div class="card-title mt-20">
+                      <h4 class="text-center sub-heading">New Shopper </h4>
+                    </div>
+                    <p class="sub-heading-para">
+                      Customers who have installed your app and
+                      completed registration but have not made a
+                      transaction as of yet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="img">
+                      <img src="assets/img/universal-tracking/Drop_customer.webp" alt="">
+                    </div>
+                    <div class="card-title mt-20">
+                      <h4 class="text-center sub-heading">Drop cart customers </h4>
+                    </div>
+                    <p class="sub-heading-para">
+                      Customers who added products in the shopping
+                      cart but did not complete the transaction. Convert
+                      these users using dynamic ads using the browsed
+                      & similar products.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="img">
+                      <img src="assets/img/universal-tracking/Dormant_shopper.webp" alt="">
+                    </div>
+                    <div class="card-title mt-20">
+                      <h4 class="text-center sub-heading">Lapsed or dormant shoppers </h4>
+                    </div>
+                    <p class="sub-heading-para">
+                      Activate dormant or lapsed users with targeted
+                      ads. Customers who have not made a purchase in
+                      the last 30 days or a specific period of time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="img">
+                      <img src="assets/img/universal-tracking/high_shopper.webp" alt="">
+                    </div>
+                    <div class="card-title mt-20">
+                      <h4 class="text-center sub-heading">Hight LTV shoppers </h4>
+                    </div>
+                    <p class="sub-heading-para">
+                      Boost engagement with regular shoppers by
+                      targeting higher average order value or increasing
+                      the cart size. Upselling and Cross-selling product
+                      ads work wonders for this customer cohort.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="img">
+                      <img src="assets/img/universal-tracking/loyal_20customer.webp" alt="">
+                    </div>
+                    <div class="card-title mt-20">
+                      <h4 class="text-center sub-heading">Loyalty shoppers </h4>
+                    </div>
+                    <p class="sub-heading-para">
+                      Engage with loyal customers by using reminder ads
+                      in multiple creative formats. Remind them that you
+                      value them by running customised campaigns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="img">
+                      <img src="assets/img/universal-tracking/look_modelling.webp" alt="">
+                    </div>
+                    <div class="card-title mt-20">
+                      <h4 class="text-center sub-heading">Lookalike modelling </h4>
+                    </div>
+                    <p class="sub-heading-para">
+                      Our machine learning algorithms work on the
+                      customers who have browsed the products
+                      recently and help you acquire new customers by
+                      understanding the audience segments that need
+                      retargetting based on the existing customer
+                      patterns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
     </div>
   </section>
 
@@ -864,6 +981,32 @@
           ],
       });
     });
+
+    $(document).ready(function(){
+  $('.carousel').slick({
+  slidesToShow: 3,
+  dots:true,
+  centerMode: true,
+  arrows: true,
+  dots: false,
+  speed: 300,
+  centerPadding: '25px',
+  infinite: true,
+  autoplaySpeed: 5000,
+  autoplay: false,
+  responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+            
+          ],
+  });
+});
+
+// Slick version 1.5.8
 
     var swiper = new Swiper(".mySwiper", {
       loop: true,
