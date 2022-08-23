@@ -1,0 +1,4 @@
+[22-Aug-2022 05:28:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ptint_r() in /home/aldebaranmedia/public_html/contact/mail.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/aldebaranmedia/public_html/contact/mail.php on line 13
