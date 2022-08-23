@@ -112,7 +112,7 @@ select.contactus-select {
   font-size: 14px !important;
   background: transparent;
   margin-top: 40px;
-  font-family: "Josefin Sans", sans-serif !important;
+  /* font-family: "Josefin Sans", sans-serif !important; */
   border-radius: 0%;
   appearance: revert !important;
 }
