@@ -193,6 +193,23 @@ header .carousel-inner .item img {
   }
 }
 
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #d30023;
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+  border-radius: .5rem;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+  border-radius: .5rem;
+}
+
 .slider-title {
   color: #ffffff;
   padding: 50px 0px;

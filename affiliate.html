@@ -188,9 +188,11 @@
           </div>
           ...
         </div>
+
+        <div class="swiper-pagination"></div>
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
       </div>
     </section>
 
@@ -744,11 +746,19 @@
           loop: true,
           spaceBetween: 50,
           speed: 1000,
+          observer: true,
+            obsereParents: true,
           effect: "fade",
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+           // If we need pagination
+           pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
           autoplay: {
             delay: 5000,
             disableOnInteraction: false,
