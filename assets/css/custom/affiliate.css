@@ -181,7 +181,7 @@ header .carousel-inner .item img {
 }
 
 .swiper-container {
-  height: 90vh;
+  height: 80vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -416,7 +416,7 @@ header .carousel-inner .item img {
 .banner {
   background-size: cover;
   background-position: 40% 30%;
-  height: auto;
+  min-height: 400px;
   width: 100%;
   position: relative;
   overflow: hidden;

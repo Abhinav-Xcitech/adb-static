@@ -585,7 +585,7 @@
                 } else {
                   toastMixin.fire({
                     icon: "error",
-                    title: "Something went wrong",
+                    title: response.data.errorMessage,
                     animation: true,
                   });
                 }
