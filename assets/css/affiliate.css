@@ -87,16 +87,27 @@
 .slide-1 {
   background: url("../img/affiliate/Connect.webp");
   background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide-2 {
   background: url("../img/affiliate/Promote.webp");
   background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide-3 {
   background: url("../img/affiliate/paid.webp");
   background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
