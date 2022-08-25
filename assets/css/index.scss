@@ -91,6 +91,19 @@ html {
       min-height: 44vh;
     }
   }
+
+
+  @media only screen and (min-width: 1400px) {
+    .what-we-do {
+      min-height: 40vh;
+    }
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .what-we-do {
+      min-height: 38vh;
+    }
+  }
   
   
   .what-we-do.slides_container .slide .imgWrapper{

@@ -158,13 +158,26 @@ header .carousel-inner .item img {
 }
 
 .slider-container {
-  padding: 50px;
+  padding: 50px 20px;
   height: 100%;
-  min-height: 600px;
-  display: flex;
+    display: flex;
   flex-direction: column;
   justify-content: center;
   /* padding: 100px; */
+}
+
+.swiper-container{
+  height: 90vh;
+  
+}
+
+@media only screen and (min-width: 768px){
+  .swiper-container{
+    height: 70vh;
+  }
+  .slider-container {
+    padding: 50px;
+  }
 }
 
 
@@ -391,8 +404,9 @@ header .carousel-inner .item img {
 }
 
 .advertiser-main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../img/affiliate/Advertiser\ main.jpg");
+  // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  //   url("../../img/affiliate/Advertiser\ main.webp");
+  background:url("../../img/affiliate/Advertiser\ main.webp");
   background-position: center top;
 
   background-size: cover;
@@ -402,8 +416,7 @@ header .carousel-inner .item img {
   overflow: hidden;
 }
 .publisher-main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../img/affiliate/publisher\ main.jpg");
+  background: url("../../img/affiliate/publisher\ main.webp");
   background-position: center top;
   background-size: cover;
   height: auto;
@@ -412,8 +425,7 @@ header .carousel-inner .item img {
   overflow: hidden;
 }
 .influencer-main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../img/affiliate/Influencer\ Main.jpg");
+  background:  url("../../img/affiliate/Influencer\ Main.webp");
   background-position: center top;
   background-size: cover;
   height: auto;
@@ -987,6 +999,8 @@ ul.Overview-list li {
 .carousel{
   width:90%;
   margin:0px auto;
+  text-align: center;
+
 }
 
   
@@ -1014,4 +1028,5 @@ ul.Overview-list li {
           transform: scale(1);
           vertical-align: center;
 }
+
 

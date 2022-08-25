@@ -509,7 +509,7 @@ Who_are_you.addEventListener("blur", (e) => {
             required: true,
             digits: true,
           },
-          Who_are_you: {
+          who_are_you: {
             required: true,
           },
           subject: {
@@ -547,12 +547,8 @@ Who_are_you.addEventListener("blur", (e) => {
 
             let email_subject = "";
 
-            if (formDataObj.Who_are_you == "Advertiser") {
-              email_subject = "Advertiser Enquiry";
-            } else if (formDataObj.Who_are_you == "Publisher") {
-              email_subject = "Publisher Enquiry";
-            } else if (formDataObj.Who_are_you == "Influencer") {
-              email_subject = "Influencer Enquiry";
+            if (formDataObj.who_are_you) {
+              email_subject =  `Enquiry for ${formDataObj.who_are_you}`;
             } else {
               email_subject = "Enquiry from Website";
             }
