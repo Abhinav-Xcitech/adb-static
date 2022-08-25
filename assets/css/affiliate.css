@@ -89,7 +89,7 @@
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .slide-2 {
@@ -98,7 +98,7 @@
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .slide-3 {
@@ -107,7 +107,7 @@
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
 }
 
 

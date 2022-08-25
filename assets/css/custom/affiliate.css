@@ -497,6 +497,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
           justify-content: center;
 }
 
+.influencer-main .banner-content {
+  margin-top: 60px;
+}
+
 .banner .banner-content .sub-title-text {
   font-size: 16px;
   font-weight: 600;
