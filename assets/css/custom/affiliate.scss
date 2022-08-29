@@ -506,6 +506,14 @@ margin-top: 60px;
   text-decoration: none;
 }
 
+.banner .banner-content  {
+    .btn-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+}
+
 .types-of-publisher {
   .card {
     min-height: 260px;
