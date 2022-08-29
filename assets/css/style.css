@@ -263,6 +263,7 @@ button:focus {
   font-size: 35px !important;
   font-weight: 600 !important;
   line-height: 1.2  !important;
+  text-align: center;
 }
 
 .banner-main-heading {
@@ -270,12 +271,16 @@ button:focus {
   font-size: 45px !important;
   font-weight: 600 !important;
   line-height: 1.2  !important;
+  text-shadow: 0 2px 2px #00000080;
+  text-align: center;
 }
 
 .banner-para {
   font-size: 18px !important;
   color: #ffffff !important;
   font-weight: 400 !important;
+  text-shadow: 0 2px 2px #00000080;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
