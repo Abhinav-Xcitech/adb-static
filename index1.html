@@ -777,8 +777,6 @@
   crossorigin="anonymous"
 ></script>
 
-<script src="assets/js/menuzord.js"></script>
-<script src="assets/materialize/js/materialize.min.js"></script>
 
 
 
@@ -795,7 +793,7 @@
 <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
 <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>  
 <script async src="//static.getclicky.com/101173006.js"></script>
@@ -823,49 +821,49 @@
       }, interval);
     });
 
-    // $(document).ready(function () {
-    //   $(".what-we-d").slick({
-    //     speed: 2000,
-    //     autoplay: true,
-    //     autoplaySpeed: 5000,
-    //     cssEase: "linear",
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     dots: false,
-    //     swipeToSlide: true,
-    //     centerMode: false,
-    //     focusOnSelect: false,
-    //     pauseOnHover: false,
-    //   });
-    // });
+    $(document).ready(function () {
+      $(".what-we-d").slick({
+        speed: 2000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        cssEase: "linear",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        swipeToSlide: true,
+        centerMode: false,
+        focusOnSelect: false,
+        pauseOnHover: false,
+      });
+    });
 
-    // $(document).ready(function () {
-    //   $(".customer-logos").slick({
-    //     slidesToShow: 6,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 1500,
-    //     arrows: false,
-    //     dots: false,
-    //     cssEase: "linear",
-    //     pauseOnHover: false,
-    //     responsive: [
-    //       {
-    //         breakpoint: 768,
-    //         settings: {
-    //           slidesToShow: 4,
-    //         },
-    //       },
-    //       {
-    //         breakpoint: 520,
-    //         settings: {
-    //           slidesToShow: 2,
-    //         },
-    //       },
-    //     ],
-    //   });
-    // });
+    $(document).ready(function () {
+      $(".customer-logos").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        cssEase: "linear",
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
+    });
 
     let options = {
       startAngle: -1.55,
@@ -898,6 +896,7 @@
     });
   </script>
 
+<script src="assets/js/menuzord.js"></script>
 </body>
 
 </html>
