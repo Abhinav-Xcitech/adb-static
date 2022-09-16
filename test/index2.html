@@ -898,10 +898,10 @@
           <div class="indeterminate"></div>
         </div>
       </div>
-    </div>
+    </div> 
     <!-- End Preloader -->
 
-     <script
+    <script
       src="https://code.jquery.com/jquery-2.2.0.min.js"
       type="text/javascript"
     ></script>
@@ -924,9 +924,7 @@
     <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>  
     <script async src="//static.getclicky.com/101173006.js"></script>
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101173006ns.gif" /></p></noscript>
@@ -936,7 +934,6 @@
     <script src="assets/js/scripts.js"></script>
 
     <script>
-
         $(function(){
           /*make sure the first element shows up*/
           $('.slides_container .slide:first-child').addClass("active");
@@ -952,7 +949,7 @@
         });
 
       $(document).ready(function () {
-        $(".what-we-d ").slick({
+        $(".what-we-do").slick({
           speed: 2000,
           autoplay: true,
           autoplaySpeed: 5000,
@@ -995,36 +992,36 @@
         });
       });
 
-      let options = {
-        startAngle: -1.55,
-        size: 150,
-        value: 0.85,
-        fill: { gradient: ["#500B28 ", "#E21C34 "] },
-      };
-      $(".circle .bar")
-        .circleProgress(options)
-        .on("circle-animation-progress", function (event, progress, stepValue) {
-          $(this)
-            .parent()
-            .find("span")
-            .text(String(stepValue.toFixed(2).substr(2)) + "%");
-        });
-      $(".Affiliate  .bar").circleProgress({
-        value: 0.95,
-      });
-      $(".Branding .bar").circleProgress({
-        value: 0.85,
-      });
-      $(".Media_Buying .bar").circleProgress({
-        value: 0.8,
-      });
-      $(".Mobile .bar").circleProgress({
-        value: 0.72,
-      });
-      $(".Influencer .bar").circleProgress({
-        value: 0.5,
-      });
-    </script>
+    //   let options = {
+    //     startAngle: -1.55,
+    //     size: 150,
+    //     value: 0.85,
+    //     fill: { gradient: ["#500B28 ", "#E21C34 "] },
+    //   };
+    //   $(".circle .bar")
+    //     .circleProgress(options)
+    //     .on("circle-animation-progress", function (event, progress, stepValue) {
+    //       $(this)
+    //         .parent()
+    //         .find("span")
+    //         .text(String(stepValue.toFixed(2).substr(2)) + "%");
+    //     });
+    //   $(".Affiliate  .bar").circleProgress({
+    //     value: 0.95,
+    //   });
+    //   $(".Branding .bar").circleProgress({
+    //     value: 0.85,
+    //   });
+    //   $(".Media_Buying .bar").circleProgress({
+    //     value: 0.8,
+    //   });
+    //   $(".Mobile .bar").circleProgress({
+    //     value: 0.72,
+    //   });
+    //   $(".Influencer .bar").circleProgress({
+    //     value: 0.5,
+    //   });
+    </script> 
 	
   </body>
 </html>
