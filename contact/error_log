@@ -2,3 +2,19 @@
 Stack trace:
 #0 {main}
   thrown in /home/aldebaranmedia/public_html/contact/mail.php on line 13
+[31-Aug-2022 08:48:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ptint_r() in /home/aldebaranmedia/public_html/contact/mail.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/aldebaranmedia/public_html/contact/mail.php on line 13
+[01-Sep-2022 11:17:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ptint_r() in /home/aldebaranmedia/public_html/contact/mail.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/aldebaranmedia/public_html/contact/mail.php on line 13
+[13-Sep-2022 16:08:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ptint_r() in /home/aldebaranmedia/public_html/contact/mail.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/aldebaranmedia/public_html/contact/mail.php on line 13
+[16-Sep-2022 23:35:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ptint_r() in /home/aldebaranmedia/public_html/contact/mail.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/aldebaranmedia/public_html/contact/mail.php on line 13

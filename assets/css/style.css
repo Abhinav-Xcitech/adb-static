@@ -268,7 +268,8 @@ button:focus {
 
 .banner-main-heading {
   color: #ffffff !important;
-  font-size: 45px !important;
+  /* i changed color from white to red #d30023 */
+  font-size: 55px !important;
   font-weight: 600 !important;
   line-height: 1.2  !important;
   text-shadow: 0 2px 2px #00000080;
@@ -1056,6 +1057,7 @@ thead {
 .sub-intro {
   display: block;
   margin: 0 auto 30px;
+  
 }
 
 /* @media (min-width: 768px){
@@ -1280,8 +1282,10 @@ thead {
 }
 
 .banner-7 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/affiliate/main.webp");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/affiliate/main.webp");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/affiliate/adb-new.jpg"); 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/affiliate/adb-new.jpg");
+
+  
   min-height: 90vh;
   width: 100%;
   height: 100%;
