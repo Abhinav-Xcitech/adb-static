@@ -2392,4 +2392,19 @@ KEY FRAME
 #preloader .progress .indeterminate {
   background: #03a9f4;
 }
+
+.swiper-overflow-container {
+  overflow-x: hidden;
+  /* prevent horizontal scroll */
+}
+
+.swiper-overflow-container .container {
+  overflow: visible;
+  /* if your container has overflow by default */
+}
+
+.swiper-overflow-container .swiper-container {
+  overflow: visible;
+  /* remove swiper container overflow */
+}
 /*# sourceMappingURL=style.css.map */

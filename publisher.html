@@ -430,61 +430,7 @@
     <script src="assets/js/scripts.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $(".customer-logos").slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 4,
-              },
-            },
-            {
-              breakpoint: 520,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-          ],
-        });
-      });
-
-      let options = {
-        startAngle: -1.55,
-        size: 150,
-        value: 0.85,
-        fill: { gradient: ["#a445b2", "#fa4299"] },
-      };
-      $(".circle .bar")
-        .circleProgress(options)
-        .on("circle-animation-progress", function (event, progress, stepValue) {
-          $(this)
-            .parent()
-            .find("span")
-            .text(String(stepValue.toFixed(2).substr(2)) + "%");
-        });
-      $(".Affiliate  .bar").circleProgress({
-        value: 0.95,
-      });
-      $(".Branding .bar").circleProgress({
-        value: 0.85,
-      });
-      $(".Media_Buying .bar").circleProgress({
-        value: 0.8,
-      });
-      $(".Mobile .bar").circleProgress({
-        value: 0.72,
-      });
-      $(".Influencer .bar").circleProgress({
-        value: 0.5,
-      });
+      
 
       (function ($) {
         $(function () {
