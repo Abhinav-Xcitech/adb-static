@@ -52,6 +52,13 @@ body {
   padding: 5px;
 }
 
+@media only screen and (max-width: 460px) {
+  
+.whatWeDo .swiper-slide {
+min-height: 720px ;
+}
+}
+
 .whatWeDo .swiper-slide .imgWrapper {
   min-width: 200px;
   max-width: 400px;
