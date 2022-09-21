@@ -171,6 +171,12 @@
   }
   
 }
+@media only  screen and (max-width: 400px){ 
+  .banner {
+    height: 120vh;
+  }
+  
+}
 
 .banner{
   background-image: url(../img/affiliate/paid.webp), url(../img/banner/wave.svg);
@@ -180,7 +186,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  min-height: max-content;
+  height: max-content;
 }
 
 
