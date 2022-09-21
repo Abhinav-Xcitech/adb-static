@@ -109,7 +109,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/affiliate/adb-new.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top right;
   min-height: 560px;
 }
 
